@@ -20,7 +20,7 @@ The schedule past this week is a plan and may change. Slides are posted after ea
 | Class 1 | Sep 11 | Intro and studio |  | [PDF](classes/20260911_c1w1_fri_intro-and-studio/class-1-slides.pdf) · [live deck](classes/20260911_c1w1_fri_intro-and-studio/class-1-slides.html) |
 | Class 2 | Sep 18 | Voice and teams | HW 1: write in your voice | [PDF](classes/20260918_c2w2_fri_voice-and-teams/class-2-slides.pdf) · [live deck](classes/20260918_c2w2_fri_voice-and-teams/class-2-slides.html) |
 | Class 3 | Sep 25 | Divergent thinking and interviews | HW 2: idea brief and team | [PDF](classes/20260925_c3w3_fri_problem-solution-interviews/class-3-slides.pdf) · [live deck](classes/20260925_c3w3_fri_problem-solution-interviews/class-3-slides.html) |
-| Class 4 | Oct 2 | Synthesis and no-slop setup | HW 3: design work, interviews | [PDF](classes/20261002_c4w4_fri_synthesis-and-brand-position/class-4-slides.pdf) |
+| Class 4 | Oct 2 | Synthesis and no-slop setup | HW 3: design work, interviews | [PDF](classes/20261002_c4w4_fri_synthesis-and-brand-position/class-4-slides.pdf) · [live deck](classes/20261002_c4w4_fri_synthesis-and-brand-position/class-4-slides.html) |
 | Class 5 | Oct 9 | Build kickoff and landing pages | HW 4: synthesis, personas, setup | Coming soon |
 | Class 6 | Oct 16 | Driving traffic | HW 5: landing page, demand test | Coming soon |
 | Class 7 | Oct 23 | MVP demos | HW 6: working MVP | Coming soon |
