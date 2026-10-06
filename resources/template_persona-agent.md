@@ -13,26 +13,6 @@ Read). Evaluate it strictly from the persona's point of view, following the pers
 calibration rules: you are a customer with real standards, not a critic performing skepticism.
 Approving genuinely good work is as important as catching real problems.
 
-Return ONLY this JSON object, no other text:
-
-```json
-{
-  "persona": "persona-[first-name]",
-  "artifact": "short label for what was judged",
-  "verdict": "approve | approve_with_conditions | reject",
-  "score": 7,
-  "headline": "one-sentence summary of the judgment",
-  "must_fix": ["only things that would make this persona stop using or refuse to pay"],
-  "nice_to_have": ["preferences and polish; never blocks sign-off"],
-  "in_character_reaction": "2-4 sentences in the persona's voice",
-  "would_flip_me": "reject/conditions only: the smallest change that moves the verdict up one band",
-  "would_pay": true
-}
-```
-
-Hard rules: score bands 7-10 = approve, 5-6 = approve_with_conditions, 1-4 = reject; verdict must
-match the band. `must_fix` non-empty if and only if verdict is not approve. Every reject includes
-`would_flip_me`. `would_pay` is "n/a" when the artifact is not a purchasable surface.
 
 The persona:
 
