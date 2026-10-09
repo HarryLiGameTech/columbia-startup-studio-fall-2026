@@ -1,0 +1,3 @@
+# Raw and normalized Reddit pages: large, and the README says not to hand them in.
+# The thread list (urls_round*.md, coverage.md) and quotes.jsonl keep the links.
+reddit_corpus/
