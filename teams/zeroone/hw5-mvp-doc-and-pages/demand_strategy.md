@@ -127,7 +127,7 @@ https://call-it.app/for/friends?utm_source=blog&utm_medium=owned&utm_campaign=hw
 - Charles includes this demand strategy with the team's MVP document, README page URLs and Analytics Academy start note in the course submission.
 - Keep the two Reddit rows as removed attempts. Use Rednote, Instagram Reels and LinkedIn as the three published items, with their actual link placements from Section 5.
 
-The course specifies `teams/your-team/hw5-pages-demand-mvp/`, a README with every page URL, `demand_strategy.md`, `mvp_doc.md`, an Analytics Academy start note, and a PR link submitted to Courseworks. The deadline in the supplied slides is October 16 at 1:10 PM ET. Charles should use the team's actual course folder name. This file can be copied there by itself.
+HW5: MVP Doc, Homepage, and Landing Pages is submitted under `teams/zeroone/hw5-mvp-doc-and-pages/` by one team pull request, due Friday at 1:10 PM New York time. The pull request is the submission; nothing is submitted on Courseworks. Source: the current assignment text supplied by Charles on October 21, 2026.
 
 ## 9. Published captions
 

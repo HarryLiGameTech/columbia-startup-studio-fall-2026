@@ -46,7 +46,7 @@ Each owner can use AI agents for implementation, tests, and documentation. The o
 
 ## Delivery and verification
 
-HW5 defines the MVP. The working MVP and five-minute demo are due for HW6 on October 23, 2026, at 1:10 PM America/New_York. Use a call with a short closing time so the demo can show the result and scoreboard.
+HW5 defines the MVP. The midterm MVP presentation is on October 23, 2026, at 1:10 PM America/New_York. HW6 is Demand Plan and Analytics. Use a call with a short closing time so the demo can show the result and scoreboard.
 
 The code is present. On October 16, Elad reported that all five backend migrations were applied and hosted rollback checks passed. The full signed-in production walkthrough and confirmation email delivery remain open in the team records. Verify signup, invitation acceptance, answering, result recording, and scoreboard updates before claiming the pilot is ready.
 

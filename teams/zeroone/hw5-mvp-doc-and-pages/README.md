@@ -1,4 +1,4 @@
-# ZeroOne: CallIt HW5
+# ZeroOne: HW5 MVP Doc, Homepage, and Landing Pages
 
 CallIt gives a private group one shared record of its predictions and results. The main promise is: "Being right is better when your group remembers."
 
