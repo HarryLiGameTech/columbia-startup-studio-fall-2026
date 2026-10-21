@@ -44,7 +44,7 @@ Current ownership follows the team's October 17 role decision.
 
 ## Delivery and verification
 
-HW5 defines the MVP. The working MVP and presentation are due for HW6 on October 23, 2026, at 1:10 PM America/New_York. Use a call with a short closing time so the demo can show the result and scoreboard.
+HW5 defines the MVP. The midterm MVP presentation is on October 23, 2026, at 1:10 PM America/New_York. HW6 is Demand Plan and Analytics. Use a call with a short closing time so the demo can show the result and scoreboard.
 
 The code is present. On October 16, Elad reported that all five backend migrations were applied and hosted rollback checks passed. Yuval reported an older deployed walkthrough passing 13/13 checks on October 17. The final interface change (team PR #22) and a timed rehearsal of that deployed revision remain pending as of October 21. Verify signup, invitation acceptance, answering, result recording, and scoreboard updates on the final build before claiming pilot readiness. The rubric allows 7.5 minutes for presenting and 7.5 minutes for questions; every member presents.
 

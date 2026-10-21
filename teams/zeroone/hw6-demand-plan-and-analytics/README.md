@@ -1,4 +1,4 @@
-# ZeroOne: CallIt working MVP
+# ZeroOne: HW6 Demand Plan and Analytics
 
 CallIt gives a private group one shared record of its predictions and results. The main promise is: "Being right is better when your group remembers."
 
@@ -31,4 +31,4 @@ October 23, 2026, at the start of class (1:10 PM New York time). The [official r
 
 ## Sources and supporting material
 
-The [Class 6 submission slide](https://github.com/kenxle/columbia-startup-studio-fall-2026/blob/main/classes/20261016_c6w6_fri_build-kickoff/class-6-slides.pdf) specifies this folder and these three main files. Marketing support: [weekly plan](weekly-plan.md), [blog draft](blog-draft.md), and [analytics setup](analytics.md). Publication evidence remains in the earlier [HW5 submission](../hw5-pages-demand-mvp/demand_strategy.md).
+The current assignment text supplied by Charles on October 21, 2026 specifies `teams/zeroone/hw6-demand-plan-and-analytics/` and one team pull request. The pull request is the submission; nothing is submitted on Courseworks. Supporting MVP context is in `mvp_doc.md`. Marketing support: [weekly plan](weekly-plan.md), [blog draft](blog-draft.md), and [analytics setup](analytics.md). Publication evidence remains in the earlier [HW5 submission](../hw5-mvp-doc-and-pages/demand_strategy.md).
