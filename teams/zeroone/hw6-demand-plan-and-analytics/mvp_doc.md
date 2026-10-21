@@ -39,7 +39,7 @@ Current ownership follows the team's October 17 role decision.
 | Yuval Gerber | Development: app, landing pages, database integration, hosting and analytics. |
 | Elad Tisch | Product decisions, presentation and live demo rehearsal. |
 | Aviv Pinto | Marketing with Emily, coin identity and UI design with Yuval. |
-| Zhangcheng Kang (Charles) | Integration, requirements checks, homework submission and project budget. |
+| Zhangcheng (Charles) | Integration, requirements checks, homework submission and project budget. |
 | Shiyu Zhou (Emily) | Weekly traffic, communities, publication evidence and pilot feedback. |
 
 ## Delivery and verification

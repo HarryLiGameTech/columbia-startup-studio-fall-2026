@@ -6,7 +6,7 @@
 
 ## How this file maps to the assignment
 
-The class does not define a separate "marketing specification". The graded marketing deliverable is `demand_strategy.md`, with five required items (Class 6, "Homework: your demand strategy"). Sections 1 to 5 below follow those five items in the slide's order and wording. Sections 6 to 10 are the rest of the marketing specification the team asked for. To submit, Charles copies this file as `demand_strategy.md` into `teams/zeroone/hw6-demand-plan-and-analytics/` and opens the team pull request. The pull request is the submission. Source: the current assignment text supplied by Charles on October 21, 2026. The evidence for published posts stays in [demand_strategy.md](../hw5-mvp-doc-and-pages/demand_strategy.md) (the HW5 record) and is linked, not repeated.
+The class does not define a separate "marketing specification". The graded marketing deliverable is `demand_strategy.md`, with five required items (Class 6, "Homework: your demand strategy"). Sections 1 to 5 below follow those five items in the slide's order and wording. Sections 6 to 10 are the rest of the marketing specification the team asked for. To submit, Zhangcheng (Charles) copies this file as `demand_strategy.md` into `teams/zeroone/hw6-demand-plan-and-analytics/` and opens the team pull request. The pull request is the submission. Source: the current assignment text supplied by Zhangcheng (Charles) on October 21, 2026. The evidence for published posts stays in [demand_strategy.md](../hw5-mvp-doc-and-pages/demand_strategy.md) (the HW5 record) and is linked, not repeated.
 
 ## 1. Your traffic owners, by name
 
@@ -72,7 +72,7 @@ Emily's planned post ("Everyone says 'I called it.' What should a group predicti
 >
 > We're a student team at Columbia, and we read every reply. Tell us which call your group would make first.
 >
-> Aviv, Emily, Yuval, Elad and Charles
+> Aviv, Emily, Yuval, Elad and Zhangcheng (Charles)
 
 The waitlist signup records where the person came from. The email's app link has no UTM, because the app does not record UTMs yet.
 
