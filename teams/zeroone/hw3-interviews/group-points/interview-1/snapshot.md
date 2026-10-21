@@ -4,7 +4,7 @@
 
 Interview notes
 
-Interviewer: Zhangcheng Kang (zk2329)
+Interviewer: Zhangcheng (Charles) (zk2329)
 
 Record ID: GP-01
 

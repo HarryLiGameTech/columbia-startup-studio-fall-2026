@@ -32,14 +32,14 @@ For the first pilot, the team will recruit a group and help members join. The ma
 
 ## Roles: who builds what, who owns traffic
 
-The build plan for the October 23 MVP divides the work into five parts. Each owner takes their part through implementation, tests, and fixes, then works with Charles to verify the complete flow.
+The build plan for the October 23 MVP divides the work into five parts. Each owner takes their part through implementation, tests, and fixes, then works with Zhangcheng (Charles) to verify the complete flow.
 
 | Owner | MVP build responsibility | Delivery check |
 |---|---|---|
 | Yuval Gerber | Calls and results: create and publish a call, enforce the closing time, accept one answer per member, record the result, and show who called it. | A call runs from creation to the correct-answer scoreboard; late and duplicate answers are rejected. |
 | Elad Tisch | Accounts and infrastructure: signup, sign-in, confirmation email, database permissions, hosted migrations, DNS, and deployment support. | Members can create accounts and sign in; private data stays protected; hosted configuration supports the pilot. |
 | Aviv Pinto | Groups and invitations: create a private group, share and accept invitations, manage membership and roles, and handle leaving or removing a member. | Two accounts can join the same group; manager permissions and access after departure work correctly. |
-| Zhangcheng Kang (Charles) | Integration and release verification: connect the account, group, and call flows; run the complete user journey; coordinate fixes; prepare demo data and the five-minute MVP demo. | The deployed app completes signup, joining, answering, result recording, and scoreboard updates in one verified walkthrough. |
+| Zhangcheng (Charles) | Integration and release verification: connect the account, group, and call flows; run the complete user journey; coordinate fixes; prepare demo data and the five-minute MVP demo. | The deployed app completes signup, joining, answering, result recording, and scoreboard updates in one verified walkthrough. |
 | Shiyu Zhou (Emily) | Traffic and pilot operations: recruit a friend group, help members join, run manual reminders, collect feedback, and review visits and signups with Yuval. | A pilot group completes a call; feedback records whether members return for the result and want another call. |
 
 Each owner can use AI agents for implementation, tests, and documentation. The owner reviews the output and verifies their delivery check. One coordinator handles Git changes in each shared checkout.

@@ -36,7 +36,7 @@ Emily owns community selection, founder posts, tagged links, responding to real 
 
 Emily owns the weekly traffic review and will share the findings with the team. Proposed follow-up: check replies within 24 hours and capture early observations around 24 and 72 hours when available. The weekly update covers publication status, engagement, campaign sessions, attributed signups, useful feedback and one next experiment. The first reporting date will be agreed with the team. These intervals are an operating plan rather than extra HW5 deadlines.
 
-Yuval owns analytics configuration and the GA4/database reports. Charles owns MVP planning and final submission integration. Campaign performance will be reviewed after the posts have had time to reach people. A populated traffic or signup report is not listed as an HW5 demand-strategy deliverable in the supplied slides.
+Yuval owns analytics configuration and the GA4/database reports. Zhangcheng (Charles) owns MVP planning and final submission integration. Campaign performance will be reviewed after the posts have had time to reach people. A populated traffic or signup report is not listed as an HW5 demand-strategy deliverable in the supplied slides.
 
 ## 3. Communities selected from HW4 research
 
@@ -124,10 +124,10 @@ https://call-it.app/for/friends?utm_source=blog&utm_medium=owned&utm_campaign=hw
 - Emily uploads this standalone document. It includes the community plan, all five publication records, the three published captions, tagged destinations and blog plan. No separate evidence folder is needed to read it.
 - Emily records real replies and reviews results with the team each week. r/FFCommish participation remains planned until relevant engagement occurs.
 - For the team's analytics submission, Yuval confirms the `sign_up` key-event setting. Aggregate campaign sessions and attributed signups belong to the planned weekly follow-up, rather than a required pre-submission results table.
-- Charles includes this demand strategy with the team's MVP document, README page URLs and Analytics Academy start note in the course submission.
+- Zhangcheng (Charles) includes this demand strategy with the team's MVP document, README page URLs and Analytics Academy start note in the course submission.
 - Keep the two Reddit rows as removed attempts. Use Rednote, Instagram Reels and LinkedIn as the three published items, with their actual link placements from Section 5.
 
-HW5: MVP Doc, Homepage, and Landing Pages is submitted under `teams/zeroone/hw5-mvp-doc-and-pages/` by one team pull request, due Friday at 1:10 PM New York time. The pull request is the submission; nothing is submitted on Courseworks. Source: the current assignment text supplied by Charles on October 21, 2026.
+HW5: MVP Doc, Homepage, and Landing Pages is submitted under `teams/zeroone/hw5-mvp-doc-and-pages/` by one team pull request, due Friday at 1:10 PM New York time. The pull request is the submission; nothing is submitted on Courseworks. Source: the current assignment text supplied by Zhangcheng (Charles) on October 21, 2026.
 
 ## 9. Published captions
 
