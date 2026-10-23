@@ -17,7 +17,7 @@ The Google tag should load on the homepage and each landing page. After a succes
 
 ## Latest documented check
 
-A live check dated October 16, 2026, reported that the tag loaded across the homepage and three landing pages, and that the thank-you page sent one signup event after signup. The event was not yet marked as a key event at that check. Confirm the key-event setting and use Realtime to check current activity. Standard reports can take 24 to 48 hours to populate.
+The latest documented live check, dated October 16, 2026, found that the tag loaded across the homepage and three landing pages, and that the thank-you page sent one signup event after signup. The event was not yet marked as a key event at that check. Confirm the key-event setting and use Realtime to check current activity. Standard reports can take 24 to 48 hours to populate.
 
 ## Weekly review
 
