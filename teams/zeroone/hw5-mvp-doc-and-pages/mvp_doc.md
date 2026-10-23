@@ -54,7 +54,7 @@ For the first pilot, the team will recruit a group and help members join. The ma
 - DigitalOcean hosting: USD 6 per month in the current plan. The actual invoice is pending.
 - Domain: USD 8.20 purchase reported for `call-it.app`; renewal cost is pending.
 - Supabase, Resend, GA4, GitHub, and Pexels: free plans or no cost reported. Check current quotas before onboarding a pilot.
-- The service plan and known spend are tracked in [the project budget](../../docs/BUDGET.md). Founder time is not priced.
+- The service plan and known spend are tracked in [the project budget](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/docs/BUDGET.md). Founder time is not priced.
 
 ## Roles: who builds what, who owns traffic
 
@@ -87,6 +87,6 @@ The code is present. On October 16, Elad reported that all five backend migratio
 
 ## References
 
-- [Class 5 slides](ref/class-5-slides.pdf), pages 40 and 89-91: MVP scope, document requirements, and demo deadline.
-- [HW4 brand position](../hw-4/brand_position.md): audience, core promise, and value to test.
-- [Current product rules](../../web-app/docs/product-rules.md): implemented rules and deferred features.
+- [Class 5 slides](https://github.com/kenxle/columbia-startup-studio-fall-2026/blob/main/classes/20261009_c5w5_fri_demand-gen-and-landing-pages/class-5-slides.pdf), pages 40 and 89-91: MVP scope, document requirements, and demo deadline.
+- [HW4 brand position](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/homework/hw-4/brand_position.md): audience, core promise, and value to test.
+- [Current product rules](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/web-app/docs/product-rules.md): implemented rules and deferred features.
