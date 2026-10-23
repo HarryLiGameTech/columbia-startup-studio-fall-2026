@@ -15,6 +15,7 @@ CallIt gives a private group one shared record of its predictions and results. T
 ## Demand strategy and MVP
 
 - [Demand strategy](demand_strategy.md): traffic owner, communities, published-post evidence, the weekly plan, and a blog draft.
+- [First traffic report](traffic-report-1.md): October 12 to 22 actual signup counts, with GA4 evidence pending.
 - [MVP definition](mvp_doc.md): core flow, scope, manual steps, stack, and named delivery responsibilities.
 
 ## Analytics Academy
