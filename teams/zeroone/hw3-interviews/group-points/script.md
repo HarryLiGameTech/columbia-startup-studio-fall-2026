@@ -4,7 +4,7 @@
 
 ## **Team interviewer assignments**
 
-Zhangcheng (Charles) (zk2329): GP-01, GP-06, LA-01
+Zhangcheng Kang (zk2329): GP-01, GP-06, LA-01
 
 Elad Tisch (et2921): GP-02, LA-02
 

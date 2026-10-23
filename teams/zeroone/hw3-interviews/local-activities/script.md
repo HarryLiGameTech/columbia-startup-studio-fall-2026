@@ -6,7 +6,7 @@
 
 * ## **Team interviewer assignments**
 
-* Zhangcheng (Charles) (zk2329): GP-01, GP-06, LA-01  
+* Zhangcheng Kang (zk2329): GP-01, GP-06, LA-01  
 * Elad Tisch (et2921): GP-02, LA-02  
 * Shiyu Zhou (sz3420): GP-03, LA-03  
 * Yuval Gerber (yg2840): GP-04, LA-04  
