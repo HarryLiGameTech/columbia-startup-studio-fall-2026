@@ -31,7 +31,7 @@ App accounts at app.call-it.app are counted separately from the waitlist: 8 acco
 
 | Measure | Value |
 |---|---|
-| Landing-design views in our own table, Oct 12 to 22 | 212 (tests included; home-page views not in this table) |
+| Landing-design views in our own table, Oct 12 to 22 | 212 (tests included; home-page views not in this table; not usable as a conversion denominator) |
 | GA4 users, sessions and views per page | **Pending data from Yuval** |
 | GA4 sessions per source and medium | **Pending data from Yuval** |
 | `sign_up` marked as a GA4 key event | **Pending confirmation from Yuval** |
