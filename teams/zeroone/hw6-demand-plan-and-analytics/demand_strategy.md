@@ -28,10 +28,15 @@ Each Monday, compare sessions, signup counts, published links, and audience feed
 | Audience or community | Approach | Estimated visibility |
 |---|---|---|
 | Columbia friend-group chats | A personal invitation in chats where project sharing is welcome | 20–100 readers per chat message |
+| Emily's apartment WeChat group (Columbia students) | One short invitation with the friends-page link, then one reminder before Demo Day | 100–400 readers per message |
 | NBA-following friends on Instagram and other personal channels | A short product example linked to the sports page | 100–500 views per post |
-| LinkedIn and Rednote personal networks | A founder post with student-team disclosure and one concrete problem | 100–500 views per post |
+| LinkedIn personal network | A founder post with student-team disclosure and one concrete problem | 100–500 views per post |
+| WeChat Moments, Emily's personal network | One post with the friends-page link, pinned to Emily's Moments for the rest of the semester; the link opens directly in WeChat | 100–400 views over the semester |
+| Teammates' personal accounts and group chats | Proposed: each teammate shares the main milestones on their own social accounts and in group chats they belong to, to be confirmed by each teammate | 100–500 views per share |
+| Rednote, Chinese-speaking students in New York | A bilingual story post. Rednote does not make body links clickable, so readers must copy the URL | 100–500 views per post (small account; distribution depends on the platform's recommendations) |
 | [r/FFCommish](https://www.reddit.com/r/FFCommish/) | Useful replies about clear rules and group records; no product promotion or CallIt link | 50–300 readers per relevant thread |
 | [r/SideProject](https://www.reddit.com/r/SideProject/) and [r/sideprojects](https://www.reddit.com/r/sideprojects/) | Promotional posting is paused after earlier removals | No acquisition traffic forecast while paused |
+| Product Hunt | One launch with the working MVP in the week of December 7 | 200–2,000 visits to CallIt referred by Product Hunt, conditional on launching; planning assumption only |
 
 These are rough reader/view estimates, not verified membership or unique reach. Audiences overlap. Community participation without a product link is research and relationship-building, not forecast website traffic.
 
@@ -99,6 +104,8 @@ The planning signup rate is no more than 1%, including traffic from warm channel
 | 1% | 10,000 | 8,900 |
 | 0.5% | 20,000 | 17,800 |
 
+This plan uses a cumulative goal: 100 total waitlist signups by December 18, from the 11-signup October 22 baseline, so 89 remain. If the goal is read as 100 new signups from now, about 10,000 visits are needed at 1%, as the first column shows.
+
 At 1%, the remaining target requires about 1,113 visits per week for eight weeks. If 1%–3% of cold-post impressions become visits, 8,900 visits requires about 297,000–890,000 impressions. This is a stretch target for the current personal channels.
 
 A first estimate of what the scheduled activity can produce is lower:
@@ -113,13 +120,29 @@ The estimate is 41–485 visits, or about 0–5 additional signups at 1%. Audien
 
 Each Monday, replace assumptions with measured reach and sessions. By November 6, identify which messages bring visits and seek additional permitted distribution through relevant group organizers and campus communities. Additional distribution is not secured. To meet the goal, the plan needs roughly 8,400–8,900 more visits beyond the initial channel estimate, or a revised acquisition plan. Group joins will remain a separate engagement measure.
 
+### Closing the gap
+
+The scheduled posts alone are not enough. The activities below are additional to the 23 baseline social and group-channel posts in Section 3. Emily owns them unless another owner is named. Each placement will use a lowercase UTM-tagged destination, and its public URL will be recorded after publication. All figures are planning assumptions. They are replaced with measured reach and sessions at each Monday review.
+
+| Channel | Timing | Owner | Reach assumption | Click assumption | Estimated visits |
+|---|---|---|---|---|---:|
+| Rednote posts for Chinese-speaking students in New York | Four posts: October 26, November 9, November 30 and December 14 | Emily | 100–500 views each | 1%–2% (the URL must be copied) | 4–40 |
+| Emily's apartment WeChat group (Columbia students), with `utm_source=wechat` | One message in the week of October 26 and one reminder in the week of December 14 | Emily | 100–400 readers per message | 3%–8% (warm group, clickable link) | 6–64 |
+| WeChat Moments, with `utm_source=wechat` | One post in the week of October 26, then kept pinned on Emily's profile | Emily | 100–400 views over the semester | 5%–10% (warm network, clickable link) | 5–40 |
+| Proposed: each teammate shares three milestones on their own social accounts and in group chats they belong to (the working app, the November 18 first-call invitation, Demo Day) | 15 shares, to be confirmed by each teammate | All five teammates | 100–500 views each | 2%–5% | 30–375 |
+| Product Hunt launch with the working MVP (Class 6, slide 43) | Week of December 7 | Emily and Aviv | Visits to CallIt referred by Product Hunt, conditional on launching | Not applicable | 200–2,000 |
+
+These channels add about 245–2,519 visits. With the scheduled activity (41–485 visits), the total is about 286–3,004 visits, or about 3–30 additional signups at 1%. Audiences across personal accounts may overlap. The Product Hunt launch is the largest and least certain assumption in this estimate. This is still below the 89 needed. The plan does not claim that these channels alone reach 100 signups.
+
+The Monday review decides where effort goes next. The channel with the most measured visits per post gets more posts the following week. At the November 6 and December 4 reviews, if measured visits or conversion stay below plan, the team revises the acquisition plan and effort allocation, retains the 100-signup target, and records the reason.
+
 There is no paid-ad budget in this plan.
 
 ## 7. Analytics on the public pages
 
 The measured pages are the [homepage](https://call-it.app/), [Friends](https://call-it.app/for/friends), [Sports](https://call-it.app/for/sports), and [Agreements](https://call-it.app/for/agreements). A saved signup leads to the [thank-you page](https://call-it.app/thanks), which sends the signup event.
 
-A live browser check on October 22, 2026, recorded page events on all four pages and one signup event after a saved signup, with no second signup event on reload. On October 23, all five public pages returned HTTP 200, and the deployed JavaScript contained the Google tag, signup event, thank-you route, and signup endpoint.
+A real signup on October 16 confirmed that the address is saved. A browser check on October 22 confirmed that all four pages load the Google tag and that the thank-you page sends one signup event, with none on reload. On October 23, all five public pages returned HTTP 200, and the deployed JavaScript contained the Google tag, signup event, thank-you route, and signup endpoint.
 
 The current GA4 key-event setting and a dated Realtime capture remain unverified. Code presence and recorded event requests do not prove those dashboard settings. Standard reports can take 24 to 48 hours to populate.
 
