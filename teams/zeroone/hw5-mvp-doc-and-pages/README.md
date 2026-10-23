@@ -12,11 +12,7 @@ CallIt gives a private group one shared record of its predictions and results. T
 | Agreements landing page | Groups that want to keep the original terms clear over time | [Agreements page](https://call-it.app/for/agreements) |
 | Thank-you page | Shown after a saved email signup | [Thank-you page](https://call-it.app/thanks) |
 
-## Demand strategy and MVP
+## Project documents
 
-- [Demand strategy](demand_strategy.md): traffic owner, communities, three published promotional items with tagged destinations, and a blog plan.
-- [MVP definition](mvp_doc.md): core flow, scope, manual steps, stack, and named delivery responsibilities.
-
-## Analytics Academy
-
-Yuval Gerber has started Analytics Academy 101 and 102.
+- [Demand strategy](demand_strategy.md): audience, communities, published posts, tracked links, and blog plan.
+- [MVP definition](mvp_doc.md): core flow, scope, stack, costs, roles, and success measures.
