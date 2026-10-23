@@ -13,11 +13,9 @@ CallIt gives private friend groups a shared record of their predictions and resu
 
 Each page offers the same email signup. A successful signup leads to the [thank-you page](https://call-it.app/thanks).
 
-The homepage, three landing pages, and thank-you page returned HTTP 200 on October 23, 2026. The latest recorded signup test, on October 22, confirmed that a submitted address was saved and the thank-you page sent one signup event. Welcome-email sending has been accepted by the email provider; recipient inbox placement has not been verified.
+The homepage, three landing pages, and thank-you page returned HTTP 200 on October 23, 2026. A real signup on October 16 confirmed that the address is saved. A browser check on October 22 confirmed that all four pages load the Google tag and that the thank-you page sends one signup event, with none on reload. Welcome-email sending has been accepted by the email provider; recipient inbox placement has not been verified.
 
 ## Product and design
 
 - [MVP document](mvp_doc.md): scope, features, manual steps, services, costs, success measures, risks, and roles.
-- [Product source repository](https://github.com/Yuval-Gerber/CallIt).
-- [Landing-page source](https://github.com/Yuval-Gerber/CallIt/tree/codex/recover-landing-pages/landing-pages).
 - [Brand position](../hw4-synthesis-brand-position/brand_position.md) and [style guide](../hw4-synthesis-brand-position/style_guide.md): the visual and language system used on the pages.
