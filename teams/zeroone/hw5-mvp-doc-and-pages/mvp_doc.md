@@ -1,92 +1,63 @@
 # CallIt MVP
 
-## Core flow: user, action, value
+## What we are building
 
-CallIt is for existing friend groups that want a shared record of who predicted what and who called it. The core promise is: "Being right is better when your group remembers."
+CallIt is for friend groups that want a shared record of who predicted what and who called it. A manager creates a private group and shares an invitation. Members join, answer a call before its closing time, and return to see the recorded result.
 
-1. A manager creates a private group and shares its invitation link.
-2. Members create an account or sign in and join the group.
-3. The manager posts a call with 2-6 answer options, a closing time, and a clear winning condition.
-4. Each member answers once before closing. The terms and answers stay fixed.
-5. After closing, the manager checks the outcome and records the result.
-6. Members return to see the result and the group's correct-answer scoreboard.
-
-The value is one shared record of the terms, answers, and result. Members can revisit the outcome without reconstructing earlier chat messages. The pilot will test whether members answer, return for the result, and want to make another call.
+Each call has 2 to 6 answer choices, a closing time, and a clear condition for the result. Members answer once. After closing, the manager checks the result and records it. The group can revisit the terms, answers, and result without searching old messages.
 
 ## MVP features
 
-- Private groups with invitation links and manager/member roles.
-- Calls with 2–6 answers, a closing time, written terms, and an optional result source.
-- One answer per member, with picks hidden from other members until closing.
-- Manager-recorded results after closing, followed by a record of who called it.
-- Comments and a group history for resolved calls.
+- Private groups with invitations and manager/member roles.
+- Calls with clear terms, 2 to 6 choices, a closing time, and an optional result source.
+- One answer per member, hidden from other members until closing.
+- Manager-recorded results and a record of who answered correctly.
+- Comments and a history of resolved calls.
 
 ## What comes later
 
-The following items remain open or outside the core pilot. Product order requires Elad's decision.
+- Points and broader scoring.
+- A process for reviewing disputed results.
+- Public groups, automated reminders, reactions, and a mobile app.
+- More ways to change or correct a call after publication.
 
-- Points and a broader scoring system, after the team decides how points work.
-- Dispute voting, after the team decides who votes, the threshold, quorum, ties, and timing.
-- Agreement-based changes to posted terms; until decided, cancel and repost instead.
-- Public groups; groups remain private in the current version.
-- Reactions beyond comments, and self-service account deletion and retention controls.
-- Automated reminders and a native mobile application.
+## Cut and manual steps
 
-## Cut: what we are not building
+The pilot does not include points, dispute voting, public groups, automated reminders, payment processing, or a native mobile app. Published terms and submitted answers stay fixed. A call with incorrect terms must be cancelled and posted again.
 
-The core pilot uses private groups, fixed calls, one answer per member, manager-recorded results, and a correct-answer scoreboard. It excludes a points economy, dispute voting, public groups, reactions, automated reminders, payment processing, and a native mobile app. The manager's recorded result is final in this version. A call with incorrect terms must be cancelled and posted again.
+For an initial pilot, a group manager checks the agreed result source and enters the outcome manually. The group can use its existing chat for reminders and feedback. These steps let the team learn from real groups before building more automation.
 
-The current app also has optional room token values and a settlement ledger. Members settle outside CallIt through Venmo, Apple Cash, or in person. CallIt records amounts and payment status; it does not transfer money. These features are outside the core pilot demonstration.
+## Stack, services, and cost
 
-## Faked: our Wizard of Oz parts
+- **Application:** Next.js with Supabase authentication and Postgres.
+- **Marketing pages:** Vite with a shared Node.js waitlist service and Google Analytics.
+- **Coding agent:** Codex and Claude Code.
+- **Hosting:** DigitalOcean with Caddy and HTTPS.
+- **Current cost estimate:** DigitalOcean is listed at USD 6 per month. The domain purchase was USD 8.20. Supabase, Resend, Google Analytics, GitHub, and Pexels are on free plans or have no cost recorded. Prices and free-plan limits can change. Founder time is not included.
 
-For the first pilot, the team will recruit a group and help members join. The manager will check the agreed result source and enter the outcome manually. The team will use the group's existing chat for reminders and feedback rather than build an automated notification system. These are planned manual steps; pilot results are not yet established.
+## Roles
 
-## Stack: framework, agent, and hosting
+| Owner | Responsibility |
+|---|---|
+| Yuval Gerber | Application, landing pages, database integration, hosting, and analytics. |
+| Elad Tisch | Product decisions, presentation, and demo. |
+| Aviv Pinto | Marketing, product identity, and interface design with Yuval. |
+| Zhangcheng (Charles) | Integration, requirements checks, homework submission, and project budget. |
+| Shiyu Zhou (Emily) | Weekly traffic, communities, posts, and pilot feedback. |
 
-- **Application:** Next.js with Supabase authentication and Postgres. Database access rules protect private group data.
-- **Marketing pages:** Vite, with a shared Node.js waitlist service and Google Analytics.
-- **Coding agents:** Codex and Claude Code, coordinated through a custom Git-based multi-agent workflow. Shared instructions, a bulletin board, and a sync agent support handoffs and regular synchronization.
-- **Hosting:** A DigitalOcean server runs the application and marketing pages behind Caddy with HTTPS. The server deploys from the team's GitHub base branch.
-
-### Services and current cost evidence
-
-- DigitalOcean hosting: USD 6 per month in the current plan. The actual invoice is pending.
-- Domain: USD 8.20 purchase reported for `call-it.app`; renewal cost is pending.
-- Supabase, Resend, GA4, GitHub, and Pexels: free plans or no cost reported. Check current quotas before onboarding a pilot.
-- The service plan and known spend are tracked in [the project budget](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/docs/BUDGET.md). Founder time is not priced.
-
-## Roles: who builds what, who owns traffic
-
-The build plan for the October 23 MVP divides the work into five parts. Each owner takes their part through implementation, tests, and fixes, then works with Zhangcheng (Charles) to verify the complete flow.
-
-| Owner | MVP build responsibility | Delivery check |
-|---|---|---|
-| Yuval Gerber | Calls and results: create and publish a call, enforce the closing time, accept one answer per member, record the result, and show who called it. | A call runs from creation to the correct-answer scoreboard; late and duplicate answers are rejected. |
-| Elad Tisch | Accounts and infrastructure: signup, sign-in, confirmation email, database permissions, hosted migrations, DNS, and deployment support. | Members can create accounts and sign in; private data stays protected; hosted configuration supports the pilot. |
-| Aviv Pinto | Groups and invitations: create a private group, share and accept invitations, manage membership and roles, and handle leaving or removing a member. | Two accounts can join the same group; manager permissions and access after departure work correctly. |
-| Zhangcheng (Charles) | Integration and release verification: connect the account, group, and call flows; run the complete user journey; coordinate fixes; prepare demo data and the five-minute MVP demo. | The deployed app completes signup, joining, answering, result recording, and scoreboard updates in one verified walkthrough. |
-| Shiyu Zhou (Emily) | Traffic and pilot operations: recruit a friend group, help members join, run manual reminders, collect feedback, and review visits and signups with Yuval. | A pilot group completes a call; feedback records whether members return for the result and want another call. |
 ## How we will know it works
 
-Track account creations for recruited pilot groups, then check whether members answer a call, return for its result, and start another call. The course assignment and product rules do not set a pass threshold. Elad must set the threshold before the pilot results are used to decide whether to continue.
+Measure account creations and whether members answer a call, return for its result, and start another call. The pilot will show whether groups use the shared record more than once. The course assignment does not set a numeric pass threshold.
 
 ## Risks and open questions
 
-- Small pilot groups may not show whether members will keep using the app.
-- Managers record results by hand. They must agree on the source and the meaning of each call before members answer.
-- The account-creation target for continuing the pilot is open and needs Elad's decision.
-- The course expects analytics and a working public experience. GA4 key-event status and a final signed-in browser walkthrough still need evidence.
-- Current service invoices, quotas, and the domain's renewal cost need owner read-backs.
-
-## Delivery and verification
-
-HW5 defines the MVP. The midterm MVP presentation is on October 23, 2026, at 1:10 PM America/New_York. HW6 is Demand Plan and Analytics. Use a call with a short closing time so the demo can show the result and scoreboard.
-
-The code is present. On October 16, Elad reported that all five backend migrations were applied and hosted rollback checks passed. Yuval reported an older deployed walkthrough passing 13/13 checks on October 17. The final interface change (team PR #22) and a timed rehearsal of that deployed revision remain pending as of October 21. Verify signup, invitation acceptance, answering, result recording, and scoreboard updates on the final build before claiming pilot readiness. The rubric allows 7.5 minutes for presenting and 7.5 minutes for questions; every member presents.
+- A small pilot may not show whether groups will keep using CallIt.
+- Managers must agree on the result source and meaning of each call before members answer.
+- The team must decide how to handle disputed results and later changes to terms.
+- Analytics and a final walkthrough should be checked on the live experience before the pilot.
 
 ## References
 
-- [Class 5 slides](https://github.com/kenxle/columbia-startup-studio-fall-2026/blob/main/classes/20261009_c5w5_fri_demand-gen-and-landing-pages/class-5-slides.pdf), pages 40 and 89-91: MVP scope, document requirements, and demo deadline.
-- [HW4 brand position](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/homework/hw-4/brand_position.md): audience, core promise, and value to test.
-- [Current product rules](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/web-app/docs/product-rules.md): implemented rules and deferred features.
+- [Class 5 slides](https://github.com/kenxle/columbia-startup-studio-fall-2026/blob/main/classes/20261009_c5w5_fri_demand-gen-and-landing-pages/class-5-slides.pdf): MVP scope, document requirements, and demo.
+- [Brand position](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/landing-pages/docs/brand_position.md): audience, core promise, and value to test.
+- [Product rules](https://github.com/Yuval-Gerber/CallIt/blob/codex/recover-landing-pages/web-app/docs/product-rules.md): current behavior and future decisions.
