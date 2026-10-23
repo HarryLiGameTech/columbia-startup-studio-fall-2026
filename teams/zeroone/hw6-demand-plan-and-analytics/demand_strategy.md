@@ -1,73 +1,126 @@
-# CallIt: demand strategy
+# CallIt: semester demand strategy
 
-CallIt helps private friend groups keep a shared record of predictions and results. The semester goal is 100 waitlist signups by December 18, 2026. The October 23 baseline is 11 signups, leaving 89.
+CallIt gives private friend groups a shared record of predictions and results. The goal is 100 email-waitlist signups by December 18, 2026. There were 11 signups at the October 22 baseline, excluding verification entries. This leaves 89 to reach the goal. App account creations and group joins are separate product measures.
 
-## 1. Traffic owners
+All future dates and reach figures below are plans or estimates, not completed results.
 
-| Owner | Responsibility |
-|---|---|
-| Shiyu Zhou (Emily) | Community participation, weekly traffic review, and audience feedback. |
-| Aviv Pinto | Social content, group outreach, and blog content. |
-| Yuval Gerber | Landing pages, email delivery, and analytics. |
+## 1. Traffic responsibility, by week
 
-Review visits, signups, and useful feedback each week. Use the findings to choose one change to the message or channel mix.
+Shiyu Zhou (Emily) owns community participation and the weekly traffic review. Aviv Pinto owns social posts and group outreach. Yuval Gerber supports analytics and email delivery.
 
-## 2. Communities
-
-| Community | Audience and approach | Estimated reach |
-|---|---|---:|
-| [r/FFCommish](https://www.reddit.com/r/FFCommish/) | Fantasy league organizers discuss clear rules and group records. Join relevant discussions without promoting CallIt or adding product links. | 50–300 readers per useful thread |
-| [r/SideProject](https://www.reddit.com/r/SideProject/) | Builders discuss new products and can give product feedback. Earlier CallIt posts were removed; follow community rules before posting again. | 50–300 readers per relevant post |
-| Columbia friend groups | Existing groups are the closest match to CallIt's audience. Share an invitation only where the message is welcome. | 20–100 readers per relevant chat |
-
-These reach figures are rough planning estimates, not measured audience sizes. Social posts are estimated at 100–500 views each. Where possible, use platform reach and tagged website sessions. Do not count overlapping audiences as unique people.
-
-## 3. Social posting schedule
-
-Three organic posts are planned each week from October 26 through December 18: a LinkedIn founder post, an Instagram Reel, and an invitation to a relevant friend group. Each link uses lowercase UTM values. The first three published posts are listed here.
-
-| Platform | Audience | Tagged destination |
+| Week | Traffic owners | Planned focus |
 |---|---|---|
-| Rednote | Friends | [Friends page](https://call-it.app/for/friends?utm_source=rednote&utm_medium=post&utm_campaign=hw5_launch&utm_content=i_said_it) |
-| Instagram Reel | Sports groups | [Sports page](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=hw5_launch&utm_content=knicks_spurs_reel) |
-| LinkedIn | Friends and startup community | [Friends page](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=hw5_launch&utm_content=founder_post) |
+| Oct 12–16 | Emily | Initial Rednote, Instagram, and LinkedIn posts |
+| Oct 19–23 | Emily and Aviv | Review launch results and prepare the semester schedule |
+| Oct 26–30 | Emily and Aviv | First blog article, three social or group posts, and Monday traffic review |
+| Nov 2–6 | Emily and Aviv | Establish per-page traffic and signup baselines; track app invitations and joins separately |
+| Nov 9–13 | Emily and Aviv | Invite five friend groups to try a real call; continue weekly community participation |
+| Nov 16–20 | Emily and Aviv | Second blog article and a first-call invitation email on November 18 |
+| Nov 23–27 | Aviv | One holiday post and one group-chat invitation |
+| Nov 30–Dec 4 | Emily and Aviv | Collect three group stories, with permission to share them |
+| Dec 7–11 | Emily and Aviv | Review campaign results and prepare the product's user stories |
+| Dec 14–18 | Emily and Aviv | Final outreach and a live product QR code on Demo Day |
 
-Use three tagged links each week. Add the public post URL when a post is published.
+Each Monday, compare sessions, signup counts, published links, and audience feedback. Choose one change for the next week. Reply to comments within 24 hours where possible.
 
-| Week | LinkedIn | Instagram | Friend-group invitation |
+## 2. Top communities and estimated reach
+
+| Audience or community | Approach | Estimated visibility |
+|---|---|---|
+| Columbia friend-group chats | A personal invitation in chats where project sharing is welcome | 20–100 readers per chat message |
+| NBA-following friends on Instagram and other personal channels | A short product example linked to the sports page | 100–500 views per post |
+| LinkedIn and Rednote personal networks | A founder post with student-team disclosure and one concrete problem | 100–500 views per post |
+| [r/FFCommish](https://www.reddit.com/r/FFCommish/) | Useful replies about clear rules and group records; no product promotion or CallIt link | 50–300 readers per relevant thread |
+| [r/SideProject](https://www.reddit.com/r/SideProject/) and [r/sideprojects](https://www.reddit.com/r/sideprojects/) | Promotional posting is paused after earlier removals | No acquisition traffic forecast while paused |
+
+These are rough reader/view estimates, not verified membership or unique reach. Audiences overlap. Community participation without a product link is research and relationship-building, not forecast website traffic.
+
+## 3. Social posting schedule and links
+
+Aviv plans three social or group-channel posts each week from October 26: one LinkedIn post, one Instagram Reel, and one friend-group message. Thanksgiving week has two posts. This is 23 planned posts or messages through December 18.
+
+### Published launch posts
+
+| Platform | Public post | Tagged destination |
+|---|---|---|
+| Rednote | [Dinner-lateness prediction](https://www.xiaohongshu.com/explore/6ad1f5e0000000001403a1f4) | [Friends page](https://call-it.app/for/friends?utm_source=rednote&utm_medium=post&utm_campaign=hw5_launch&utm_content=i_said_it) |
+| Instagram | [Knicks/Spurs Reel](https://www.instagram.com/_shiyu_zhou_/reel/DejDiv1SyHM/) | [Sports page](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=hw5_launch&utm_content=knicks_spurs_reel) |
+| LinkedIn | [Founder post](https://www.linkedin.com/feed/update/urn:li:activity:7516841462333046784/) | [Friends page](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=hw5_launch&utm_content=founder_post) |
+
+These publication records are from the October launch. Platform sign-in or visibility rules may affect access.
+
+### Remaining-semester calendar
+
+The links below are campaign destinations for planned posts. Public post URLs will be added after publication.
+
+| Week | LinkedIn post | Instagram Reel | Friend-group message |
 |---|---|---|---|
-| Oct 26–30 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week1_founder) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week1_reel) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week1_try_a_call) |
-| Nov 2–6 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week2_analytics) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week2_product_clip) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week2_room_invite) |
-| Nov 9–13 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week3_cold_start) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week3_call_demo) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week3_seeded_room) |
-| Nov 16–20 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week4_showcase) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week4_group_record) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week4_first_call) |
-| Nov 23–27 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week5_holiday_call) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week5_holiday_clip) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week5_thanksgiving) |
-| Nov 30–Dec 4 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week6_user_story) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week6_solution_clip) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week6_pilot_call) |
-| Dec 7–11 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week7_deck_workshop) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week7_clear_terms) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week7_group_story) |
-| Dec 14–18 | [Friends](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week8_demo_day) | [Sports](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week8_demo_clip) | [Friends](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week8_live_invite) |
+| Oct 26–30 | [Shared-record introduction](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week1_founder) | [Season-call example](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week1_reel) | [Try one call](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week1_try_a_call) |
+| Nov 2–6 | [What a clear call needs](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week2_analytics) | [Product walkthrough](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week2_product_clip) | [Group invitation](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week2_room_invite) |
+| Nov 9–13 | [Starting with a friend group](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week3_cold_start) | [A call from start to result](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week3_call_demo) | [Five-group pilot](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week3_seeded_room) |
+| Nov 16–20 | [What a prediction record keeps](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week4_showcase) | [Shared history](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week4_group_record) | [Make the first call](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week4_first_call) |
+| Nov 23–27 | [Holiday call](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week5_holiday_call) | No Reel planned | [Holiday group invitation](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week5_thanksgiving) |
+| Nov 30–Dec 4 | [A real group story](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week6_user_story) | [Keeping the record](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week6_solution_clip) | [Pilot call](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week6_pilot_call) |
+| Dec 7–11 | [What groups learned](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week7_deck_workshop) | [Clear terms](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week7_clear_terms) | [Share a group story](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week7_group_story) |
+| Dec 14–18 | [Product demonstration](https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=semester_2026&utm_content=week8_demo_day) | [Demo clip](https://call-it.app/for/sports?utm_source=instagram&utm_medium=bio&utm_campaign=semester_2026&utm_content=week8_demo_clip) | [Live invitation](https://call-it.app/for/friends?utm_source=groupchat&utm_medium=dm&utm_campaign=semester_2026&utm_content=week8_live_invite) |
 
-## 4. Blog schedule
+Every campaign link uses lowercase UTM values. Record platform reach and website sessions separately. Direct invitations to the live app are measured as group joins and do not replace waitlist signups in the forecast.
 
-The first article is planned for October 30. It gives practical advice for making a season-long prediction easy to settle in April. It links to the [Agreements page](https://call-it.app/for/agreements?utm_source=blog&utm_medium=owned&utm_campaign=launch&utm_content=season_calls).
+## 4. Blog schedule and ideas
 
-| Target date | Article type | Topic |
+Two articles are planned for the rest of the semester. Aviv writes the first and Emily the second. The planned publishing destination is each author's personal publishing profile, with a clear CallIt affiliation. The final article URL will be recorded when published.
+
+| Target date | Owner | Article type | Topic | CTA destination |
+|---|---|---|---|---|
+| Oct 30 | Aviv, with Emily reviewing | Tactical advice | Season-long calls: how to write a prediction your group can settle in April | [Agreements page](https://call-it.app/for/agreements?utm_source=blog&utm_medium=owned&utm_campaign=launch&utm_content=season_calls) |
+| Nov 20 | Emily, with Aviv supporting | Problem-focused | Everyone says "I called it." What should a group prediction record keep? | [Friends page](https://call-it.app/for/friends?utm_source=blog&utm_medium=owned&utm_campaign=semester_2026&utm_content=group_prediction_record) |
+| Idea for a later article | To be scheduled | Founder journey | What our first user interviews changed about CallIt | Friends page |
+| Idea for a later article | To be scheduled | Solution explainer | How a group keeps a prediction and its result together | Agreements page |
+
+The article types follow [Class 6, slide 45](https://github.com/kenxle/columbia-startup-studio-fall-2026/blob/main/classes/20261016_c6w6_fri_build-kickoff/class-6-slides.pdf). The two additional ideas do not yet have publication dates.
+
+## 5. Email and lifecycle strategy
+
+| Trigger or date | Message | Status and responsibility |
 |---|---|---|
-| Oct 30 | Tactical advice | How to write a season-long prediction with clear terms |
-| Nov 20 | Problem-focused | What should a group prediction record keep? |
-| Later in semester | Founder journey | What user interviews changed about CallIt |
-| Later in semester | Solution explainer | How a group keeps a prediction and its result together |
+| A new waitlist signup | One welcome email introducing CallIt | Implemented; Yuval owns delivery |
+| Nov 18 | A first-call invitation for subscribers who want to try the product | Planned; Aviv writes, Yuval sends |
+| A useful feature release or pilot result | A short product update to subscribers who agreed to receive it | Planned; no fixed newsletter cadence |
+| A pilot group's first call closes | Ask whether members returned for the result and want to make another call | Manual feedback through the group's agreed channel |
 
-The article types follow [Class 6, slide 45](https://github.com/kenxle/columbia-startup-studio-fall-2026/blob/main/classes/20261016_c6w6_fri_build-kickoff/class-6-slides.pdf). Use a lowercase tagged link on each published article.
+Welcome messages depend on signup date. Future product updates may depend on participation, but automated feature-usage email and notifications are not implemented. The existing email-provider records confirm accepted welcome-email sends; they do not establish recipient inbox placement.
 
-## 5. Email strategy
+## 6. Visitor and signup estimate
 
-Send one welcome email after signup. Send product updates or pilot invitations when there is useful news and the recipient has agreed to receive them. Do not send automated activity messages; notifications are not part of the current product.
+The planning signup rate is no more than 1%, including traffic from warm channels. No measured conversion advantage is assumed.
 
-## Signup estimate
+| Signup rate | Visits needed for 100 total signups from zero | Additional visits needed for the remaining 89 |
+|---|---:|---:|
+| 1% | 10,000 | 8,900 |
+| 0.5% | 20,000 | 17,800 |
 
-The remaining goal is 89 signups. At a signup rate of 1%, the plan needs about 8,900 visits, or roughly 1,113 per week over eight weeks. At 0.5%, it needs about 17,800 visits. These are planning estimates, not measured conversion rates.
+At 1%, the remaining target requires about 1,113 visits per week for eight weeks. If 1%–3% of cold-post impressions become visits, 8,900 visits requires about 297,000–890,000 impressions. This is a stretch target for the current personal channels.
 
-At an assumed 1%–3% click-through rate, 8,900 visits would require roughly 297,000–890,000 impressions. Warm group invitations and pilot groups may help reach people who are likely to use CallIt. Replace reach assumptions with observed platform data and analytics each week.
+A first estimate of what the scheduled activity can produce is lower:
 
-## Measurement
+| Activity | Visibility assumption | Click assumption | Estimated visits |
+|---|---|---|---:|
+| 15 LinkedIn posts and Instagram Reels | 100–500 views each | 1%–3% | 15–225 |
+| 8 weekly friend-group invitations | 20–100 readers each | 10%–25% | 16–200 |
+| 2 blog articles | 100–300 readers each | 5%–10% | 10–60 |
 
-Compare sessions and signups by source, campaign, and page. Track lowercase UTM parameters on every campaign link. Review the signup event in Google Analytics Realtime and mark it as a key event. Standard reports can take 24 to 48 hours to populate.
+The estimate is 41–485 visits, or about 0–5 additional signups at 1%. Audiences may overlap. These assumptions are not measured results. They show that the initial schedule alone does not support 100 signups.
+
+Each Monday, replace assumptions with measured reach and sessions. By November 6, identify which messages bring visits and seek additional permitted distribution through relevant group organizers and campus communities. Additional distribution is not secured. To meet the goal, the plan needs roughly 8,400–8,900 more visits beyond the initial channel estimate, or a revised acquisition plan. Group joins will remain a separate engagement measure.
+
+There is no paid-ad budget in this plan.
+
+## 7. Analytics on the public pages
+
+The measured pages are the [homepage](https://call-it.app/), [Friends](https://call-it.app/for/friends), [Sports](https://call-it.app/for/sports), and [Agreements](https://call-it.app/for/agreements). A saved signup leads to the [thank-you page](https://call-it.app/thanks), which sends the signup event.
+
+A live browser check on October 22, 2026, recorded page events on all four pages and one signup event after a saved signup, with no second signup event on reload. On October 23, all five public pages returned HTTP 200, and the deployed JavaScript contained the Google tag, signup event, thank-you route, and signup endpoint.
+
+The current GA4 key-event setting and a dated Realtime capture remain unverified. Code presence and recorded event requests do not prove those dashboard settings. Standard reports can take 24 to 48 hours to populate.
+
+Review sessions, signup events, and source/page breakdowns weekly. Do not calculate a measured conversion rate from the legacy page-view count, which includes verification visits and is incomplete for the homepage.
