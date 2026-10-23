@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-09",
+  "type": "synthetic persona artifact review, after Reddit revision",
+  "brand_input": "brand_position_v2.md",
+  "sha256": "4378b892029f2edc511bb1a9df08e3f19f069dd7137fab5d7b9cd9dce01b520b",
+  "definition_files": [
+    {
+      "file": "persona-alex-v2.md",
+      "sha256": "3d3d8c712b8e7a386bd73c7f1526408755d1092ace1e19d377cbdd28ed60dc3f"
+    },
+    {
+      "file": "persona-casey-v2.md",
+      "sha256": "bc040466b4d53b1cd250bca7e14033bb23b6291a0d0c513edd4cd3be089cc749"
+    },
+    {
+      "file": "persona-jordan-v2.md",
+      "sha256": "d45f0cdacf837436639c4914855637542bf765fdf859e90ba3ca0a026cca9be3"
+    }
+  ],
+  "method": "Three separate agent turns, each given one frozen persona and the same frozen brand document. No requested verdict or score and no other v2 response was supplied. The brand input itself contains a summary of historical v1 reviews; this was not a blinded experiment. Synthetic judgments are not customer validation.",
+  "status": "completed",
+  "responses": [
+    {
+      "persona": "alex",
+      "response_sha256": "26cc51c96b6d075ca2252b2d01870178af2081bec24b0107fd74c9e0911efed3",
+      "contract_valid": true
+    },
+    {
+      "persona": "casey",
+      "response_sha256": "5a286104a841d06d047b99423cf0ea45bdf38740ae5174d188d85eb86bafef27",
+      "contract_valid": true
+    },
+    {
+      "persona": "jordan",
+      "response_sha256": "3e9afd34d85cd05b53a8d8a00268ca03fcfcc69718641367c3be1c49e7be209d",
+      "contract_valid": true
+    }
+  ]
+}

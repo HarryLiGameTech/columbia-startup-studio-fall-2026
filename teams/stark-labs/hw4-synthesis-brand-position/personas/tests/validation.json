@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-09",
+  "synthetic_reviews": true,
+  "results": [
+    {
+      "persona": "alex",
+      "evidence": "CR01",
+      "exact_quotes_verified": 2,
+      "verdict_contract_pass": true,
+      "definition_sha256": "db73ab53e1b1fac37bdc423e6a043ec3d1c732b21c112dd6b9722f941dd7cdec",
+      "response_sha256": "f0457e436569d2c15e07fab29b0a6d5bcc785394dd16b47620802148f7db9131"
+    },
+    {
+      "persona": "casey",
+      "evidence": "CR02",
+      "exact_quotes_verified": 2,
+      "verdict_contract_pass": true,
+      "definition_sha256": "3a211d1d6a5b3e32285d7414c901825f566186c637f3291e3c1169705063e318",
+      "response_sha256": "9768a733f4537c66ce535c15239633867b33b5a12e5e841f46d007fa29e5c1ba"
+    },
+    {
+      "persona": "jordan",
+      "evidence": "CR05",
+      "exact_quotes_verified": 2,
+      "verdict_contract_pass": true,
+      "definition_sha256": "d78245d3d637fa948019279dfc51c09d2e8a30d25aee07793d5bea57fc4b5669",
+      "response_sha256": "6852a67a642ae60c12797d84455e5cf8c9fbe31eacb3ad38790849ddc43381e3"
+    }
+  ]
+}

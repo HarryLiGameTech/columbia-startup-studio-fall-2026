@@ -1,0 +1,43 @@
+{
+  "persona_id": "persona-casey",
+  "synthetic": true,
+  "artifact": "brand_position_v2.md",
+  "verdict": "approve",
+  "score": 8,
+  "audience_fit": "core",
+  "summary": "I can see a useful brief for our four-person group here: it asks what each section needs, acknowledges uneven detail, and lets us keep working in our shared document. That is enough to approve this internal direction. It does not yet show that a separate product would improve on our document, and I would still want to see whether the prompts make our actual contributions fit together better.",
+  "strengths": [
+    "The document explicitly separates contribution consistency from page placement. That respects CR02: we received the writing, but its length and detail were uneven.",
+    "The homepage and project-details examples give concrete questions we could answer together. They offer more guidance than a place to upload completed text (CR02).",
+    "The shared-document option is substantive: the values, objection response and example all allow us to keep our existing writing and workflow. I am not being asked to migrate just to try a brief (CR02).",
+    "The proposal preserves original wording and human confirmation, and acknowledges that prompting does not remove rewriting. That is consistent with RQ004's questionnaire followed by editing.",
+    "Measuring contributor effort alongside the builder's work is the right comparison. A tidier handoff would not help us if explaining everything takes more effort than revising together (CR02; contextual caution from RQ042)."
+  ],
+  "must_fix": [],
+  "nice_to_have": [
+    {
+      "issue": "The example names useful questions but still says to show an example of useful detail without actually providing one.",
+      "why_it_matters": "Different teammates can answer the same question with two sentences or a long essay. I understand the intended benefit, but a sample answer would make the expected depth easier to compare.",
+      "evidence_ids": ["CR02"],
+      "suggested_change": "Add one clearly authored sample contribution for the project-details section, with a short explanation of which details make it usable. Treat this as a prototype example, not a participant quote or a research-backed word limit."
+    },
+    {
+      "issue": "The next test could distinguish guidance before writing from reconciliation after uneven contributions have arrived.",
+      "why_it_matters": "Our problem could improve through clearer initial expectations, but someone may still need to revise the combined writing. RQ004 also describes rewriting after a questionnaire. These are different kinds of work.",
+      "evidence_ids": ["CR02", "RQ004"],
+      "suggested_change": "For the shared-document trial, show when teammates receive the prompts and record what joint editing remains afterward. Do not treat completed answers as proof of consistent contributions."
+    }
+  ],
+  "open_questions": [
+    "In a four-person shared-document trial, how will everyone see the same section expectations while retaining the ability to edit together?",
+    "If the answers are still uneven, who reconciles their depth and checks that the combined sections make sense?",
+    "What observable improvement over our current document would justify any additional setup, clarification or approval steps?"
+  ],
+  "evidence_limits": [
+    "This is a synthetic review of the frozen internal brand document, not a reaction from CR02 or a product usability test.",
+    "CR02 describes a student group assignment with no additional spending. The interview does not establish recurring professional demand, a budget or willingness to pay.",
+    "The evening of revision included website work; it cannot be used as content-only time saved.",
+    "RQ004 and RQ042 provide contextual cautions from different people and workflows. They do not turn Casey into a professional client or validate this brief.",
+    "Approval means the proposed guidance is understandable and worth testing alongside the existing document. It does not establish better outcomes, adoption, paid demand or superiority to an existing tool."
+  ]
+}

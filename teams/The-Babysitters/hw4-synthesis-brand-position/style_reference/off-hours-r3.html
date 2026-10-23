@@ -1,0 +1,385 @@
+<!doctype html>
+<!-- Claude Daycare style round 3, direction Off Hours (refined from round 2). Concept sketch, not a shipped page. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Claude Daycare, style round 3: Off Hours</title>
+<meta name="description" content="Style round 3, direction Off Hours. Claude Daycare and its highlighted feature, Allowance Guardrails, as an ink-blue after-hours page with a drawing of how the cap is checked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,300..500&amp;display=swap">
+<!--
+  Fonts (both SIL Open Font License 1.1, served by Google Fonts; licence files read on 2026-10-09):
+    Newsreader  https://fonts.google.com/specimen/Newsreader   licence https://github.com/google/fonts/blob/main/ofl/newsreader/OFL.txt
+    DM Mono     https://fonts.google.com/specimen/DM+Mono      licence https://github.com/google/fonts/blob/main/ofl/dmmono/OFL.txt
+  Icon: Lucide "arrow-down" (https://lucide.dev), path as in lucide-icons/lucide main on 2026-10-09.
+    Lucide is ISC licensed, Copyright (c) 2026 Lucide Icons and Contributors.
+    arrow-down is one of the Feather-derived icons, so it is also under the MIT License, Copyright (c) 2013-present Cole Bemis.
+  Everything else (backdrop glows, frame lines, square nodes, the allowance drawing) is hand-written CSS or inline SVG.
+  No downloaded images, no scripts.
+-->
+<style>
+:root {
+  --ground: #0E1647;
+  --ground-2: #090F34;
+  --ink: #EEF0F8;
+  --ink-faint: #AEB7E0;
+  --accent: #F2C14E;
+  --line: #323E86;
+  --dots: #8D97CC;
+  --glow: #3A4BC0;
+  --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --mono: "DM Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --posts: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='18'%3E%3Cpath d='M1 0v18' stroke='%23EEF0F8' stroke-width='2'/%3E%3C/svg%3E");
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+.wrap { position: relative; width: min(100% - 2rem, 80rem); margin-inline: auto; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.skip {
+  position: absolute; left: 1rem; top: -6rem; z-index: 10;
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem;
+  background: var(--accent); color: var(--ground); font: 500 .875rem var(--mono); border-radius: 4px;
+}
+.skip:focus { top: 1rem; }
+
+/* Thin 1px frame: full-width hairlines between bands, small square nodes where they meet the content edge */
+.ruled { border-top: 1px solid var(--line); --node-bg: var(--ground); }
+.ruled > .wrap::before, .ruled > .wrap::after {
+  content: ""; position: absolute; top: -4px; width: 7px; height: 7px;
+  border: 1px solid var(--ink-faint); background: var(--node-bg);
+}
+.ruled > .wrap::before { left: -4px; }
+.ruled > .wrap::after { right: -4px; }
+
+/* Tiny monospace capital labels */
+.label { margin: 0; font: 500 .75rem/1.45 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); }
+.tag {
+  display: inline-block; margin: 0; padding: .2rem .45rem;
+  font: 500 .75rem/1.25 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 2px; white-space: nowrap;
+}
+.navlink {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 .25rem;
+  font: 400 .875rem var(--mono); color: var(--ink);
+  text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .35em;
+}
+.navlink:hover { color: var(--accent); }
+
+.top-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 4.5rem; }
+.brand { margin: 0; font: 500 .9375rem/1 var(--mono); letter-spacing: .01em; }
+
+/* Hero: a title card over a soft night sky */
+.card { position: relative; isolation: isolate; }
+.sky { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; }
+.card-in { padding: 3rem 0 3.5rem; }
+h1 {
+  margin: 1.5rem 0 0;
+  font-family: var(--serif); font-weight: 300; font-optical-sizing: auto;
+  font-size: clamp(3rem, .6rem + 9.2vw, 8.25rem);
+  line-height: .94; letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.hero-foot { display: grid; gap: 2rem; margin-top: 2.5rem; }
+.sub { margin: 0; max-width: 36ch; font-size: 1.3125rem; line-height: 1.5; text-wrap: pretty; }
+.cta { display: grid; gap: 1rem; justify-items: start; align-content: start; }
+.btns { display: flex; flex-wrap: wrap; gap: .75rem; }
+.works { margin: .25rem 0 0; font: 400 .75rem/1.5 var(--mono); letter-spacing: .06em; color: var(--ink-faint); }
+
+/* Buttons: rectangles, 4px radius, arrow in its own square cell */
+.btn {
+  display: inline-flex; align-items: stretch; min-height: 3.25rem;
+  border: 1px solid var(--ink); border-radius: 4px;
+  font: 500 .8125rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; text-decoration: none;
+}
+.btn-label { display: flex; align-items: center; padding: 0 1.125rem; }
+.btn-ico { display: grid; place-items: center; width: 3.25rem; border-left: 1px solid currentColor; }
+.btn-ico svg { width: 18px; height: 18px; }
+.btn-primary { background: var(--ink); color: var(--ground); }
+.btn-primary:hover { background: var(--accent); border-color: var(--accent); }
+.btn-secondary { background: transparent; color: var(--ink); }
+.btn-secondary:hover { color: var(--accent); border-color: var(--accent); }
+
+/* The drawing: one week, then this visit up close */
+.drawing { margin-block: 0; padding: 2.5rem 0 3.5rem; }
+.d-head { display: grid; gap: .5rem; }
+.d-head .name { margin: 0; font: 300 clamp(1.75rem, 1.2rem + 1.6vw, 2.5rem)/1.15 var(--serif); letter-spacing: -.02em; max-width: 24ch; text-wrap: balance; }
+
+.strip-label { margin: 2rem 0 .75rem; }
+.scale { position: relative; height: 1.5rem; font: 400 .75rem/1 var(--mono); color: var(--ink-faint); }
+.scale span { position: absolute; left: var(--at); top: 0; transform: translateX(-50%); white-space: nowrap; }
+.scale span::after { content: ""; position: absolute; left: 50%; top: 1rem; width: 1px; height: .5rem; background: var(--ink-faint); }
+.scale .first { transform: none; }
+.scale .first::after { left: 0; }
+.scale .last { transform: translateX(-100%); }
+.scale .last::after { left: auto; right: 0; }
+
+.track { position: relative; height: 2.75rem; }
+.seg { position: absolute; top: 50%; left: var(--a); width: var(--w); transform: translateY(-50%); }
+.seg-work { height: 3px; background: var(--ink); }
+.seg-visit { height: 14px; background: var(--accent); }
+.seg-free { height: 0; border-top: 3px dotted var(--dots); }
+.seg-buffer { height: 18px; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--posts) repeat-x left center / 16px 100%; }
+.zoom { position: absolute; top: 0; bottom: 0; left: 40%; width: 10%; border: 1px solid var(--ink-faint); border-bottom: 0; }
+
+.leader { display: block; width: 100%; height: 2.25rem; color: var(--ink-faint); }
+
+.d-box { position: relative; padding: 2.25rem 0; border-top: 1px solid var(--ink-faint); border-bottom: 1px solid var(--ink-faint); }
+.d-track { position: relative; height: 4.5rem; }
+.blk { position: absolute; top: 50%; left: var(--a); width: var(--w); height: 24px; transform: translateY(-50%); }
+.blk-work { height: 3px; background: var(--ink); }
+.blk-turn { background: var(--accent); }
+.blk-home { border: 2px solid var(--accent); }
+.blk-free { height: 0; border-top: 3px dotted var(--dots); }
+.check { position: absolute; left: var(--a); top: calc(50% - 22px); width: 2px; height: 44px; margin-left: -1px; background: var(--ink); }
+.cap { position: absolute; left: 60%; top: -1px; bottom: -1px; width: 2px; margin-left: -1px; background: var(--ink); box-shadow: 0 0 0 2px var(--ground); }
+.d-note { position: absolute; padding: 0 .35rem; background: var(--ground); font: 500 .75rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; color: var(--ink); }
+.over { position: absolute; left: 60%; width: 6%; top: calc(50% + 18px); height: 8px; border: 1px solid var(--ink); border-top: 0; }
+.n-cap { left: 60%; top: .7rem; transform: translateX(-50%); }
+.n-over { left: 60%; bottom: .7rem; display: none; }
+.n-home { left: 70%; top: .7rem; display: none; }
+.d-scale { margin-top: .5rem; }
+.d-scale span::after { top: -.5rem; }
+.d-scale .odd { display: none; }
+
+.key { list-style: none; margin: 2.75rem 0 0; padding: 0; display: grid; gap: 1.5rem; }
+.key li { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: .25rem 1rem; align-items: start; }
+.key .body { display: grid; gap: .35rem; justify-items: start; }
+.key .kname { font: 500 .75rem/1.45 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); }
+.key .ktext { margin: 0; font-size: 1.0625rem; line-height: 1.5; color: var(--ink-faint); max-width: 36ch; }
+.mark { position: relative; display: block; height: 1.5rem; }
+.mark > i { position: absolute; top: 50%; transform: translateY(-50%); }
+.m-work > i { left: 0; right: 0; height: 3px; background: var(--ink); }
+.m-visit > i { left: 0; right: .5rem; height: 14px; background: var(--accent); }
+.m-buffer > i { left: 0; right: 0; height: 18px; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--posts) repeat-x left center / 12px 100%; }
+.m-turns > i { height: 18px; background: var(--accent); width: 1.1rem; }
+.m-turns > i:first-of-type { left: 0; }
+.m-turns > i:last-of-type { left: 1.5rem; }
+.m-turns > b { position: absolute; left: 1.25rem; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--ink); }
+.m-cap > i { left: 1rem; top: 0; bottom: 0; width: 2px; transform: none; background: var(--ink); }
+.m-cap > b { position: absolute; left: 1rem; width: 1.25rem; bottom: 0; height: 7px; border: 1px solid var(--ink); border-top: 0; }
+.m-home > i { height: 18px; width: 1.1rem; border: 2px solid var(--accent); }
+.m-home > i:first-of-type { left: 0; }
+.m-home > i:last-of-type { left: 1.5rem; }
+.key-week { margin-top: 1.75rem; }
+.cap-text { margin: 2.25rem 0 0; font: 400 .8125rem/1.6 var(--mono); color: var(--ink-faint); max-width: 70ch; }
+
+/* How it works */
+.how { background: var(--ground-2); --node-bg: var(--ground-2); }
+.how > .wrap { padding-top: 4rem; padding-bottom: 5rem; }
+.how-grid { display: grid; gap: 2.5rem; }
+h2 {
+  margin: .75rem 0 0; font-weight: 300; font-size: clamp(2.25rem, 1.2rem + 3.6vw, 4rem);
+  line-height: 1.02; letter-spacing: -.03em; max-width: 12ch; text-wrap: balance;
+}
+.steps { list-style: none; margin: 0; padding: 0; }
+.step { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: 0 1.25rem; padding: 1.75rem 0; border-top: 1px solid var(--line); }
+.step:last-child { border-bottom: 1px solid var(--line); }
+.num { font-weight: 300; font-size: 3.25rem; line-height: .9; letter-spacing: -.04em; color: var(--accent); }
+h3 { margin: .1rem 0 .5rem; font-weight: 500; font-size: 1.5rem; line-height: 1.2; letter-spacing: -.01em; }
+.step p { margin: 0; max-width: 44ch; color: var(--ink-faint); }
+
+.foot { background: var(--ground-2); --node-bg: var(--ground-2); }
+.foot > .wrap { padding-top: 1.75rem; padding-bottom: 2.5rem; }
+.foot-row { display: grid; gap: .75rem; align-items: center; }
+.foot p { margin: 0; font: 400 .8125rem/1.55 var(--mono); color: var(--ink-faint); max-width: 64ch; }
+.foot .navlink { justify-self: start; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn-ico svg { transition: transform .2s ease; }
+  .btn:hover .btn-ico svg { transform: translateY(3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+@media (min-width: 640px) {
+  .d-scale .odd { display: inline; }
+  .n-over, .n-home { display: block; }
+  .key { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 2rem; }
+}
+@media (min-width: 900px) {
+  .ruled > .wrap, .card > .wrap { border-left: 1px solid var(--line); border-right: 1px solid var(--line); padding-inline: 2.5rem; }
+  .top-row { padding-inline: 2.5rem; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+  .card-in { padding: 4.5rem 2.5rem 5rem; }
+  .hero-foot { margin-top: 3.5rem; }
+  .drawing { padding: 3.5rem 0 4.5rem; }
+  .key { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .how > .wrap { padding-top: 6rem; padding-bottom: 7rem; }
+  .how-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4rem; }
+  .foot-row { grid-template-columns: 1fr auto; gap: 2rem; }
+}
+@media (min-width: 1200px) {
+  .hero-foot { grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 3rem; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap top-row">
+    <p class="brand">Claude Daycare</p>
+    <a class="navlink" href="#how">How it works</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="card ruled">
+      <svg class="sky" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <defs>
+          <filter id="blur-moon" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="80"/></filter>
+          <filter id="blur-horizon" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="60"/></filter>
+        </defs>
+        <ellipse cx="1140" cy="220" rx="260" ry="190" filter="url(#blur-moon)" style="fill:var(--accent);opacity:.12"/>
+        <ellipse cx="620" cy="980" rx="1000" ry="240" filter="url(#blur-horizon)" style="fill:var(--glow);opacity:.5"/>
+      </svg>
+      <div class="wrap card-in">
+        <p class="label">Highlighted feature: Allowance Guardrails</p>
+        <h1 id="hero-title">Let your Claude play without stealing your workweek.</h1>
+        <div class="hero-foot">
+          <p class="sub">Set an allowance before each visit. It is checked between turns, and your agent comes home once it has run out.</p>
+          <div class="cta">
+            <div class="btns">
+              <a class="btn btn-primary" href="#how"><span class="btn-label">See how it works</span><span class="btn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></span></a>
+              <a class="btn btn-secondary" href="#cap"><span class="btn-label">How the cap is checked</span><span class="btn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></span></a>
+            </div>
+            <p class="works">Works with Claude Code, Codex CLI and OpenCode.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ruled">
+      <figure class="wrap drawing" id="cap" aria-labelledby="cap-title">
+        <div class="d-head">
+          <p class="label" id="cap-title">How the cap is checked</p>
+          <p class="name">One week of usage, then one visit drawn up close.</p>
+        </div>
+
+        <p class="label strip-label" aria-hidden="true">The week</p>
+        <div class="week" aria-hidden="true">
+          <div class="scale"><span class="first" style="--at: 0%">0%</span><span style="--at: 50%">50%</span><span class="last" style="--at: 100%">100%</span></div>
+          <div class="track">
+            <span class="seg seg-work" style="--a: 0%; --w: 41%"></span>
+            <span class="seg seg-visit" style="--a: 41%; --w: 7.5%"></span>
+            <span class="seg seg-free" style="--a: 50%; --w: 19%"></span>
+            <span class="seg seg-buffer" style="--a: 70%; --w: 30%"></span>
+            <span class="zoom"></span>
+          </div>
+          <svg class="leader" viewBox="0 0 100 24" preserveAspectRatio="none" focusable="false"><path d="M40 0 0 24M50 0 100 24" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>
+        </div>
+
+        <div class="detail" aria-hidden="true">
+          <div class="d-box">
+            <div class="d-track">
+              <span class="blk blk-work" style="--a: 0%; --w: 10%"></span>
+              <span class="blk blk-turn" style="--a: 10%; --w: 11%"></span>
+              <span class="blk blk-turn" style="--a: 23%; --w: 9%"></span>
+              <span class="blk blk-turn" style="--a: 34%; --w: 11%"></span>
+              <span class="blk blk-turn" style="--a: 47%; --w: 9%"></span>
+              <span class="blk blk-turn" style="--a: 58%; --w: 8%"></span>
+              <span class="blk blk-home" style="--a: 70%; --w: 6%"></span>
+              <span class="blk blk-home" style="--a: 78%; --w: 7%"></span>
+              <span class="blk blk-free" style="--a: 88%; --w: 12%"></span>
+              <span class="check" style="--a: 22%"></span>
+              <span class="check" style="--a: 33%"></span>
+              <span class="check" style="--a: 46%"></span>
+              <span class="check" style="--a: 57%"></span>
+              <span class="check" style="--a: 68%"></span>
+              <span class="over"></span>
+            </div>
+            <span class="cap"></span>
+            <span class="d-note n-cap">Cap 46%</span>
+            <span class="d-note n-over">Over</span>
+            <span class="d-note n-home">Homecoming</span>
+          </div>
+          <div class="scale d-scale"><span class="first" style="--at: 0%">40%</span><span class="odd" style="--at: 10%">41</span><span style="--at: 20%">42</span><span class="odd" style="--at: 30%">43</span><span style="--at: 40%">44</span><span class="odd" style="--at: 50%">45</span><span style="--at: 60%">46</span><span class="odd" style="--at: 70%">47</span><span style="--at: 80%">48</span><span class="odd" style="--at: 90%">49</span><span class="last" style="--at: 100%">50%</span></div>
+        </div>
+
+        <ul class="key" role="list">
+          <li>
+            <span class="mark m-turns" aria-hidden="true"><i></i><b></b><i></i></span>
+            <span class="body"><span class="kname">Turns, checked between</span><span class="ktext">Your agent plays in turns. The allowance is checked in the gaps between turns, never during one.</span></span>
+          </li>
+          <li>
+            <span class="mark m-cap" aria-hidden="true"><i></i><b></b></span>
+            <span class="body"><span class="kname">The cap, and a little over</span><span class="ktext">Starting at 41%, a 5% allowance puts the cap at 46%. The turn that crosses it finishes, so the visit ends a little over.</span></span>
+          </li>
+          <li>
+            <span class="mark m-home" aria-hidden="true"><i></i><i></i></span>
+            <span class="body"><span class="kname">Homecoming</span><span class="ktext">Two more turns: one can save memories, one writes the day report. They run after the cap and are not bounded by it.</span></span>
+          </li>
+        </ul>
+        <ul class="key key-week" role="list">
+          <li>
+            <span class="mark m-work" aria-hidden="true"><i></i></span>
+            <span class="body"><span class="kname">Work so far</span><span class="ktext">41% of the week, already spent on work.</span></span>
+          </li>
+          <li>
+            <span class="mark m-visit" aria-hidden="true"><i></i></span>
+            <span class="body"><span class="kname">This visit</span><span class="ktext">The whole visit, homecoming included, drawn up close above.</span></span>
+          </li>
+          <li>
+            <span class="mark m-buffer" aria-hidden="true"><i></i></span>
+            <span class="body"><span class="kname">Work buffer</span><span class="ktext">The last 30% of the week, held back for work.</span><span class="tag">Concept, not shipped</span></span>
+          </li>
+        </ul>
+        <figcaption class="cap-text">Numbers are illustrative. The meter reads in whole percentage points. On OpenCode the allowance is a token cap, which can stop a turn in progress.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="how ruled" id="how" aria-labelledby="how-title">
+    <div class="wrap how-grid">
+      <div>
+        <p class="label">The visit</p>
+        <h2 id="how-title">How it works in three steps</h2>
+      </div>
+      <ol class="steps" role="list">
+        <li class="step">
+          <span class="num" aria-hidden="true">1</span>
+          <div>
+            <h3>Set the allowance</h3>
+            <p>Before a visit, choose a weekly percentage (Claude Code, Codex) or a token cap (OpenCode).</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">2</span>
+          <div>
+            <h3>Send your agent</h3>
+            <p>It plays with Daycare's own tools only. The allowance is checked between turns: once it has run out, the turn in progress finishes and your agent comes home.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">3</span>
+          <div>
+            <h3>Read what happened</h3>
+            <p>Two homecoming turns follow: one can save memories, the other writes the day report. They run after the cap. The command line also prints about how much weekly usage moved while the visit ran.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="foot ruled">
+  <div class="wrap foot-row">
+    <p>Concept sketch for The Babysitters (Columbia COMS W4995, Fall 2026). Not affiliated with or endorsed by Anthropic.</p>
+    <a class="navlink" href="index.html">Both round 3 directions</a>
+  </div>
+</footer>
+</body>
+</html>

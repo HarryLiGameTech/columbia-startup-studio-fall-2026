@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aplovia logo set</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, Aptos, "Segoe UI", sans-serif; color: #15202c; background: #f5f7f9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 48px; }
+    main { width: min(1180px, 100%); margin: 0 auto; }
+    h1 { margin: 0; font-size: 36px; letter-spacing: -.035em; }
+    .lead { margin: 10px 0 34px; color: #66717c; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { min-height: 260px; padding: 28px; display: grid; align-content: center; justify-items: center; gap: 22px; background: #fff; border: 1px solid #d9dee3; border-radius: 12px; }
+    .card.dark { color: #fff; background: #172331; border-color: #172331; }
+    .card h2 { justify-self: start; align-self: start; margin: 0 0 auto; color: #66717c; font-size: 13px; font-weight: 600; }
+    .card.dark h2 { color: #b8c4cf; }
+    .mark { width: 170px; height: 136px; }
+    .lockup { width: min(460px, 100%); }
+    .stacked { width: 190px; }
+    .sizes { display: flex; align-items: flex-end; gap: 22px; }
+    .size { display: grid; justify-items: center; gap: 8px; color: #66717c; font-size: 11px; }
+    .size img { display: block; image-rendering: auto; }
+    .header-demo { grid-column: 1 / -1; min-height: auto; display: block; padding: 0; overflow: hidden; }
+    .product-header { height: 86px; display: flex; align-items: center; justify-content: space-between; padding: 0 30px; background: #172331; }
+    .product-header img { width: 214px; }
+    .product-header span { color: #b8c4cf; font-size: 14px; }
+    @media (max-width: 760px) { body { padding: 24px; } .grid { grid-template-columns: 1fr; } .header-demo { grid-column: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Aplovia logo set</h1>
+    <p class="lead">Selected geometric A/V route mark in the Midnight Navy identity.</p>
+    <section class="grid">
+      <article class="card"><h2>Primary mark</h2><img class="mark" src="mark.svg" alt="Aplovia primary mark"></article>
+      <article class="card dark"><h2>Reversed mark</h2><img class="mark" src="mark-white.svg" alt="Aplovia white mark"></article>
+      <article class="card"><h2>Horizontal lockup</h2><img class="lockup" src="lockup-light.svg" alt="Aplovia horizontal logo"></article>
+      <article class="card dark"><h2>Horizontal lockup on dark</h2><img class="lockup" src="lockup-dark.svg" alt="Aplovia white horizontal logo"></article>
+      <article class="card"><h2>Stacked lockup</h2><img class="stacked" src="stacked-light.svg" alt="Aplovia stacked logo"></article>
+      <article class="card"><h2>Small-size test</h2><div class="sizes"><span class="size"><img src="favicon-16.png" width="16" height="16" alt="">16px</span><span class="size"><img src="favicon-32.png" width="32" height="32" alt="">32px</span><span class="size"><img src="favicon-48.png" width="48" height="48" alt="">48px</span><span class="size"><img src="favicon-192.png" width="96" height="96" alt="">Avatar</span></div></article>
+      <article class="card header-demo"><div class="product-header"><img src="lockup-dark.svg" alt="Aplovia"><span>Dashboard &nbsp; · &nbsp; EN | 中文</span></div></article>
+    </section>
+  </main>
+</body>
+</html>

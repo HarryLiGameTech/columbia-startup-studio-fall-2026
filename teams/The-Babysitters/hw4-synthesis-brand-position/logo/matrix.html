@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- Logo set matrix for Claude Daycare (COMS W4995, The Babysitters, Fall 2026). No scripts. Images are the files beside this page. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Daycare logo set: matrix</title>
+<style>
+:root{--ink:#1f1e1a;--near-white:#f7f6f2;--page:#f4f3ef;--line:#d9d7cf;--muted:#5d5b53}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:400 16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:32px 16px 56px}
+h1{font-size:clamp(24px,5vw,34px);line-height:1.15;margin:0 0 12px}
+h2{font-size:20px;margin:36px 0 10px;padding-top:16px;border-top:1px solid var(--line)}
+p{margin:0 0 12px;max-width:72ch}
+code{font:500 13px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace}
+.head,.row{display:grid;grid-template-columns:230px 1fr 1fr;gap:10px;align-items:stretch}
+.head{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:20px}
+.row{margin-top:10px}
+.label{padding:6px 4px;display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere}
+.label span{font-size:13px;color:var(--muted)}
+.cell{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;min-height:120px;padding:16px;border:1px solid var(--line);overflow:hidden}
+.cell.w{background:#ffffff;color:var(--ink)}
+.cell.i{background:var(--ink);color:var(--near-white);border-color:var(--ink)}
+.cell.none p{font-size:13px;margin:0;text-align:center;opacity:.7}
+.cell img{display:block;max-width:100%}
+img.m{height:96px;width:96px}
+img.l{height:56px;width:auto}
+img.s{height:200px;width:auto}
+img.round{border-radius:50%;width:96px;height:96px}
+img.pix{image-rendering:pixelated}
+.sizes{display:grid;grid-template-columns:230px 1fr 1fr;gap:10px;margin-top:10px}
+.sizes .cell{justify-content:flex-start;align-items:flex-end;min-height:0;gap:20px}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer p{max-width:90ch}
+@media (max-width:720px){.head{display:none}.row,.sizes{grid-template-columns:1fr}.cell{min-height:96px}img.l{height:44px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Claude Daycare logo set: every file, on white and on ink</h1>
+<p>Each row is one file in this folder, drawn from that file. The left cell sits on white (#ffffff), the right on ink (#1f1e1a). Where a version would vanish on a ground (ink on ink, white on white), the cell says so and names the version to use instead. Files marked &ldquo;on ink&rdquo; carry their own ink panel, so on the ink ground only their edge disappears. The rules are in <code>LOGO_RULES.md</code>.</p>
+<div class="head"><div>File and use</div><div>On white</div><div>On ink</div></div>
+<h2>Mark alone and square</h2>
+<div class="row"><div class="label"><code>mark.svg</code><span>Mark alone, ink on light grounds. Transparent, one-cell margin.</span></div><div class="cell w"><img class="m" src="mark.svg" alt="mark.svg"></div><div class="cell i none"><p>Invisible on ink by design (ink on ink). Use <code>mark_on_ink.svg</code>.</p></div></div>
+<div class="row"><div class="label"><code>mark_on_ink.svg</code><span>Near-white mark on an ink square, one-cell margin. The favicon artwork.</span></div><div class="cell w"><img class="m" src="mark_on_ink.svg" alt="mark_on_ink.svg"></div><div class="cell i"><img class="m" src="mark_on_ink.svg" alt="mark_on_ink.svg"></div></div>
+<div class="row"><div class="label"><code>mark_square.svg</code><span>Mark centred in a square with padding (72% scale), transparent, for square slots on light grounds.</span></div><div class="cell w"><img class="m" src="mark_square.svg" alt="mark_square.svg"></div><div class="cell i none"><p>Invisible on ink by design (ink on ink). Use <code>mark_square_on_ink.svg</code>.</p></div></div>
+<div class="row"><div class="label"><code>mark_square_on_ink.svg</code><span>The padded square mark on an ink square, for square tiles on dark or mixed grounds.</span></div><div class="cell w"><img class="m" src="mark_square_on_ink.svg" alt="mark_square_on_ink.svg"></div><div class="cell i"><img class="m" src="mark_square_on_ink.svg" alt="mark_square_on_ink.svg"></div></div>
+<h2>Lockup (mark beside the name)</h2>
+<div class="row"><div class="label"><code>lockup.svg</code><span>Mark and name in ink, transparent. Headers, documents, slides on light grounds.</span></div><div class="cell w"><img class="l" src="lockup.svg" alt="lockup.svg"></div><div class="cell i none"><p>Invisible on ink by design (ink on ink). Use <code>lockup_on_ink.svg</code>.</p></div></div>
+<div class="row"><div class="label"><code>lockup_on_ink.svg</code><span>Near-white lockup on an ink panel with the clear space built in. Dark headers, covers.</span></div><div class="cell w"><img class="l" src="lockup_on_ink.svg" alt="lockup_on_ink.svg"></div><div class="cell i"><img class="l" src="lockup_on_ink.svg" alt="lockup_on_ink.svg"></div></div>
+<h2>Stacked (mark above the name)</h2>
+<div class="row"><div class="label"><code>stacked.svg</code><span>Mark above the name, centred, in ink. Square or portrait slots, posters, title slides.</span></div><div class="cell w"><img class="s" src="stacked.svg" alt="stacked.svg"></div><div class="cell i none"><p>Invisible on ink by design (ink on ink). Use <code>stacked_on_ink.svg</code>.</p></div></div>
+<div class="row"><div class="label"><code>stacked_on_ink.svg</code><span>Near-white stacked version on an ink panel with the clear space built in.</span></div><div class="cell w"><img class="s" src="stacked_on_ink.svg" alt="stacked_on_ink.svg"></div><div class="cell i"><img class="s" src="stacked_on_ink.svg" alt="stacked_on_ink.svg"></div></div>
+<h2>One-colour versions</h2>
+<div class="row"><div class="label"><code>mono_black.svg</code><span>Pure black mark on transparent. Black-only print, stamps, photocopies.</span></div><div class="cell w"><img class="m" src="mono_black.svg" alt="mono_black.svg"></div><div class="cell i none"><p>Invisible on ink by design (ink on ink). Use <code>mono_white.svg</code>.</p></div></div>
+<div class="row"><div class="label"><code>mono_white.svg</code><span>Pure white mark on transparent. Over photos or any dark ground.</span></div><div class="cell w none"><p>Invisible on white by design (white on white). Use <code>mono_black.svg</code>.</p></div><div class="cell i"><img class="m" src="mono_white.svg" alt="mono_white.svg"></div></div>
+<div class="row"><div class="label"><code>lockup_mono_black.svg</code><span>Pure black lockup on transparent. Black-only print, stamps, photocopies.</span></div><div class="cell w"><img class="l" src="lockup_mono_black.svg" alt="lockup_mono_black.svg"></div><div class="cell i none"><p>Invisible on ink by design (ink on ink). Use <code>lockup_mono_white.svg</code>.</p></div></div>
+<div class="row"><div class="label"><code>lockup_mono_white.svg</code><span>Pure white lockup on transparent. Over photos or any dark ground.</span></div><div class="cell w none"><p>Invisible on white by design (white on white). Use <code>lockup_mono_black.svg</code>.</p></div><div class="cell i"><img class="l" src="lockup_mono_white.svg" alt="lockup_mono_white.svg"></div></div>
+<h2>Avatar and favicons</h2>
+<div class="row"><div class="label"><code>avatar.svg</code><span>Square social profile picture, vector. Mark at 5/8 scale, inside a circular crop.</span></div><div class="cell w"><img class="m" src="avatar.svg" alt="avatar.svg"><img class="round" src="avatar.svg" alt="avatar.svg in a circular crop"></div><div class="cell i"><img class="m" src="avatar.svg" alt="avatar.svg"><img class="round" src="avatar.svg" alt="avatar.svg in a circular crop"></div></div>
+<div class="row"><div class="label"><code>avatar-512.png</code><span>Avatar as a 512 px PNG for uploads. Shown here square and in a circular crop.</span></div><div class="cell w"><img class="pix av" width="128" height="128" src="avatar-512.png" alt="avatar-512.png"><img class="round" width="96" height="96" src="avatar-512.png" alt="avatar-512.png in a circular crop"></div><div class="cell i"><img class="pix av" width="128" height="128" src="avatar-512.png" alt="avatar-512.png"><img class="round" width="96" height="96" src="avatar-512.png" alt="avatar-512.png in a circular crop"></div></div>
+<div class="row"><div class="label"><code>favicon.svg</code><span>Favicon for browsers that take SVG. Near-white mark on an ink square.</span></div><div class="cell w"><img class="m" src="favicon.svg" alt="favicon.svg"></div><div class="cell i"><img class="m" src="favicon.svg" alt="favicon.svg"></div></div>
+<div class="row"><div class="label"><code>favicon-16.png</code><span>Favicon, 16 px. Shown at actual size and enlarged 8 times (nearest neighbour).</span></div><div class="cell w"><img class="pix" width="16" height="16" src="favicon-16.png" alt="favicon-16.png"><img class="pix" width="128" height="128" src="favicon-16.png" alt=""></div><div class="cell i"><img class="pix" width="16" height="16" src="favicon-16.png" alt="favicon-16.png"><img class="pix" width="128" height="128" src="favicon-16.png" alt=""></div></div>
+<div class="row"><div class="label"><code>favicon-32.png</code><span>Favicon, 32 px. Shown at actual size and enlarged 4 times.</span></div><div class="cell w"><img class="pix" width="32" height="32" src="favicon-32.png" alt="favicon-32.png"><img class="pix" width="128" height="128" src="favicon-32.png" alt=""></div><div class="cell i"><img class="pix" width="32" height="32" src="favicon-32.png" alt="favicon-32.png"><img class="pix" width="128" height="128" src="favicon-32.png" alt=""></div></div>
+<div class="row"><div class="label"><code>favicon-48.png</code><span>Favicon, 48 px. Shown at actual size and enlarged 3 times.</span></div><div class="cell w"><img class="pix" width="48" height="48" src="favicon-48.png" alt="favicon-48.png"><img class="pix" width="144" height="144" src="favicon-48.png" alt=""></div><div class="cell i"><img class="pix" width="48" height="48" src="favicon-48.png" alt="favicon-48.png"><img class="pix" width="144" height="144" src="favicon-48.png" alt=""></div></div>
+<div class="row"><div class="label"><code>apple-touch-icon.png</code><span>iOS home-screen icon, 180 px. Full-bleed ink square, no transparency.</span></div><div class="cell w"><img class="pix" width="180" height="180" src="apple-touch-icon.png" alt="apple-touch-icon.png"></div><div class="cell i"><img class="pix" width="180" height="180" src="apple-touch-icon.png" alt="apple-touch-icon.png"></div></div>
+<div class="row"><div class="label"><code>favicon-192.png</code><span>Android and web-app icon, 192 px.</span></div><div class="cell w"><img class="pix" width="192" height="192" src="favicon-192.png" alt="favicon-192.png"></div><div class="cell i"><img class="pix" width="192" height="192" src="favicon-192.png" alt="favicon-192.png"></div></div>
+<div class="row"><div class="label"><code>favicon-512.png</code><span>Web-app icon, 512 px. Shown at half size.</span></div><div class="cell w"><img class="pix" width="256" height="256" src="favicon-512.png" alt="favicon-512.png"></div><div class="cell i"><img class="pix" width="256" height="256" src="favicon-512.png" alt="favicon-512.png"></div></div>
+<div class="row"><div class="label"><code>favicon.ico</code><span>Legacy favicon file with 16, 32 and 48 px inside. Shown as your browser draws it.</span></div><div class="cell w"><img class="pix" width="48" height="48" src="favicon.ico" alt="favicon.ico"></div><div class="cell i"><img class="pix" width="48" height="48" src="favicon.ico" alt="favicon.ico"></div></div>
+<h2>Smallest sizes, drawn at actual size</h2>
+<p>The mark alone at 16, 24, 32 and 48 px, and the lockup with a cap height of 14 px (the smallest recommended) and 28 px. A high-density screen will draw these sharper than a 1x screen does.</p>
+<div class="sizes"><div class="label"><code>mark.svg</code><span>Mark box 16, 24, 32, 48 px</span></div>
+<div class="cell w"><img src="mark.svg" width="16" height="16" alt="mark at 16 px"><img src="mark.svg" width="24" height="24" alt="mark at 24 px"><img src="mark.svg" width="32" height="32" alt="mark at 32 px"><img src="mark.svg" width="48" height="48" alt="mark at 48 px"></div>
+<div class="cell i"><img src="mark_on_ink.svg" width="16" height="16" alt="mark on ink at 16 px"><img src="mark_on_ink.svg" width="24" height="24" alt="mark on ink at 24 px"><img src="mark_on_ink.svg" width="32" height="32" alt="mark on ink at 32 px"><img src="mark_on_ink.svg" width="48" height="48" alt="mark on ink at 48 px"></div></div>
+<div class="sizes"><div class="label"><code>lockup.svg</code><span>Cap height 14 px and 28 px</span></div>
+<div class="cell w"><img src="lockup.svg" width="166" height="20" alt="lockup, cap height 14 px"><img src="lockup.svg" width="331" height="41" alt="lockup, cap height 28 px"></div>
+<div class="cell i"><img src="lockup_mono_white.svg" width="166" height="20" alt="white lockup, cap height 14 px"><img src="lockup_mono_white.svg" width="331" height="41" alt="white lockup, cap height 28 px"></div></div>
+<footer>
+<p>The name is set in Hanken Grotesk 700 (SIL Open Font License 1.1) and converted to outlines, so no file needs the font. If the team changes its heading font, regenerate the lockup, stacked and avatar files with <code>build_logo_set.py</code>.</p>
+<p>The mark is the &ldquo;capped bars&rdquo; mark from logo round 3. It is the team&rsquo;s own product mark and uses no Anthropic or Claude logo.</p>
+</footer>
+</main>
+</body>
+</html>

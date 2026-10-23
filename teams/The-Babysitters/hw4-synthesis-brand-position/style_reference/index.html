@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- Index of Claude Daycare style round 3. System fonts only, no outside requests, no scripts. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Daycare, style round 3</title>
+<meta name="description" content="Two landing-page directions for Claude Daycare, refined from style round 2.">
+<style>
+:root {
+  --bg: #FAF8F4;
+  --card: #FFFFFF;
+  --ink: #1B1B1B;
+  --ink-2: #55524C;
+  --link: #0B57D0;
+  --rule: #6F6A60;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 1.0625rem; line-height: 1.55; }
+.wrap { width: min(100% - 2rem, 60rem); margin-inline: auto; padding: 3rem 0 2rem; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 3px; }
+.skip {
+  position: absolute; left: 1rem; top: -6rem; z-index: 10;
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem;
+  background: var(--ink); color: var(--bg); font-weight: 600; border-radius: 4px;
+}
+.skip:focus { top: 1rem; }
+.brand { margin: 0 0 2.5rem; font: 600 .9375rem/1 var(--mono); }
+h1 { margin: 0 0 1rem; font-size: clamp(1.875rem, 1.2rem + 2.6vw, 2.75rem); line-height: 1.1; letter-spacing: -.02em; }
+.sub { margin: 0 0 2.5rem; max-width: 58ch; color: var(--ink-2); }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.dir {
+  display: grid; gap: .5rem; min-height: 44px; height: 100%; padding: 1.25rem;
+  background: var(--card); color: var(--ink); text-decoration: none;
+  border: 1px solid var(--rule); border-radius: 4px;
+}
+.dir .name { font-size: 1.25rem; font-weight: 650; color: var(--link); text-decoration: underline; text-underline-offset: .2em; }
+.dir:hover .name { text-decoration-thickness: 2px; }
+.dir .desc { color: var(--ink-2); }
+.dir .was { font: 400 .75rem/1.4 var(--mono); letter-spacing: .06em; color: var(--ink-2); }
+.chips { display: flex; gap: .4rem; margin-top: .25rem; }
+.chips i { display: block; width: 1.75rem; height: 1.75rem; border: 1px solid var(--rule); border-radius: 2px; }
+.note { margin: 2rem 0 0; max-width: 62ch; color: var(--ink-2); font-size: .9375rem; }
+.tag { display: inline-block; padding: .1rem .4rem; font: 500 .75rem/1.3 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink); border: 1px solid var(--ink); border-radius: 2px; }
+.links { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .25rem; }
+.links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--link); }
+.foot { border-top: 1px solid var(--rule); }
+.foot .wrap { padding-top: 0; padding-bottom: 2rem; }
+.foot p { margin: 0; padding: 1.25rem 0 .5rem; font: 400 .8125rem/1.55 var(--mono); color: var(--ink-2); max-width: 64ch; }
+@media (min-width: 720px) {
+  .list { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main" class="wrap">
+  <p class="brand">Claude Daycare</p>
+  <h1>Style round 3: two directions</h1>
+  <p class="sub">Each page is a landing-page hero for Allowance Guardrails, the highlighted feature, a drawing of how the cap is checked, and the same three-step section. They are listed in the order of the brief, not ranked, and neither is a finished design.</p>
+  <ul class="list" role="list">
+    <li><a class="dir" href="off-hours-r3.html"><span class="name">Off Hours</span><span class="was">Round 2 page off-hours.html, refined</span><span class="desc">An ink-blue after-hours page: a light serif headline over a soft night sky, thin frame lines with square nodes, and a week of usage with one visit drawn up close, turn by turn.</span><span class="chips" aria-hidden="true"><i style="background:#0E1647"></i><i style="background:#F2C14E"></i><i style="background:#EEF0F8"></i></span></a></li>
+    <li><a class="dir" href="inside-the-lines-r3.html"><span class="name">Inside the Lines</span><span class="was">Round 2 page inside-the-lines.html, refined</span><span class="desc">A green-black ruled page in monospace: a ticked left rail, square nodes, and one visit drawn across a quiet playing field, one line per turn.</span><span class="chips" aria-hidden="true"><i style="background:#0B1F0F"></i><i style="background:#174A1F"></i><i style="background:#F5D547"></i></span></a></li>
+  </ul>
+  <p class="note">The only unbuilt idea shown is the protected work buffer, and it carries a <span class="tag">Concept, not shipped</span> label on both pages. All numbers are illustrative. The drawings follow how the runner works today: the cap is checked between turns, so a visit can end a little over it, and two homecoming turns run after it.</p>
+  <ul class="links" role="list">
+    <li><a href="NOTES.md">NOTES.md: what changed, palettes, fonts, contrast, what was not verified</a></li>
+    <li><a href="../../hw4-handin/style_guide.md">Draft style guide (hw4-handin/style_guide.md)</a></li>
+  </ul>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>Concept sketch for The Babysitters (Columbia COMS W4995, Fall 2026). Not affiliated with or endorsed by Anthropic.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Quotes used
+
+Every quote is word for word from a saved Reddit page. IDs match `quotes.jsonl`, and each row identifies where the quote is used.
+
+## Brand position (canonical language and proof points)
+
+| ID | Quote (exact words) | Link | Used in |
+|---|---|---|---|
+| Q06 | "I think because there is SO MUCH cool stuff to do everyday, the amount of options feels overwhelming. It’s easier to do stuff when you’re already out, so if you’re leaving the house that day, make a plan to stay out and do something you’ve been interested in!" (r/nyu, Nov 2025) | https://www.reddit.com/r/nyu/comments/1omkfqp/how_do_you_not_bed_rot/nmpw1ja/ | brand_position.md: brand thesis / problem statement |
+| Q10 | "I'm just frustrated cause for a while I hoped I'd be able to do fun things with the people I know (they aren't bad or anything, they just can't be asked to do stuff)." (r/socialskills, Oct 2025) | https://www.reddit.com/r/socialskills/comments/1ohf9rr/people_dont_like_doing_things_in_my_city_and_the/nlnlzup/ | brand_position.md: target identity / canonical language ("do stuff") |
+| Q01 | "I’m broke broke right now lol, but I don’t want to just sit at home all day." (r/AskNYC, Oct 2026) | https://www.reddit.com/r/AskNYC/comments/1wx5cdn/broke_in_nyc_where_can_i_hang_out_for_free_and/ | brand_position.md: key quotes / budget proof point |
+| Q13 | "Shifting my intention to specifically make friends within my neighborhood was a game changer." (r/AskNYC, Mar 2026) | https://www.reddit.com/r/AskNYC/comments/1s60pd1/making_and_maintaining_meaningful_friendships/ocz2a9k/ | brand_position.md: canonical language (radius / close by) |
+
+## Persona quotes
+
+| Persona | ID | Quote (exact words) | Link | Used in |
+|---|---|---|---|---|
+| Sofia Ramirez, saver who never goes | Q06 | "I think because there is SO MUCH cool stuff to do everyday, the amount of options feels overwhelming. It’s easier to do stuff when you’re already out, so if you’re leaving the house that day, make a plan to stay out and do something you’ve been interested in!" (r/nyu, Nov 2025) | https://www.reddit.com/r/nyu/comments/1omkfqp/how_do_you_not_bed_rot/nmpw1ja/ | `plandit/.claude/agents/persona-sofia.md` |
+| Sofia Ramirez, saver who never goes | Q18 | "running out of ideas but i know theres so much here i havent seen yet" (r/AskNYC, Feb 2026) | https://www.reddit.com/r/AskNYC/comments/1ra0o2l/freecheap_activities_in_nyc_when_unemployed/ | `plandit/.claude/agents/persona-sofia.md` |
+| Amara Okafor, group-chat planner | Q10 | "I'm just frustrated cause for a while I hoped I'd be able to do fun things with the people I know (they aren't bad or anything, they just can't be asked to do stuff)." (r/socialskills, Oct 2025) | https://www.reddit.com/r/socialskills/comments/1ohf9rr/people_dont_like_doing_things_in_my_city_and_the/nlnlzup/ | `plandit/.claude/agents/persona-amara.md` |
+| Amara Okafor, group-chat planner | Q07 | "the other 3 hang out independent of the group much more often than we hang out as a group." (r/socialskills, Dec 2025) | https://www.reddit.com/r/socialskills/comments/1q0qu5o/not_invited_to_nye_party/ | `plandit/.claude/agents/persona-amara.md` |
+| Grace Lin, budget-stretcher | Q01 | "I’m broke broke right now lol, but I don’t want to just sit at home all day." (r/AskNYC, Oct 2026) | https://www.reddit.com/r/AskNYC/comments/1wx5cdn/broke_in_nyc_where_can_i_hang_out_for_free_and/ | `plandit/.claude/agents/persona-grace.md` |
+| Grace Lin, budget-stretcher | Q12 | "Proximity is a big factor - I'm not going to hang out casually with people when it takes me an hour to get to their neighborhood or vice versa. That's a big time commitment (2 hours round trip), and a midway point becomes necessary - which then requires money, specific plans, etc. and loses the spontaneity you're looking for." (r/AskNYC, Mar 2026) | https://www.reddit.com/r/AskNYC/comments/1s60pd1/making_and_maintaining_meaningful_friendships/ocym4za/ | `plandit/.claude/agents/persona-grace.md` |
+| Marcus Bell, student-athlete with a short free window | Q17 | "You’ll be doing your homework most weekends." (r/columbia, Sep 2026) | https://www.reddit.com/r/columbia/comments/1wjb45x/partysocial_scene_question/pahlrh6/ | `plandit/.claude/agents/persona-marcus.md` |
+| Marcus Bell, student-athlete with a short free window | Q12 | "Proximity is a big factor - I'm not going to hang out casually with people when it takes me an hour to get to their neighborhood or vice versa. That's a big time commitment (2 hours round trip), and a midway point becomes necessary - which then requires money, specific plans, etc. and loses the spontaneity you're looking for." (r/AskNYC, Mar 2026) | https://www.reddit.com/r/AskNYC/comments/1s60pd1/making_and_maintaining_meaningful_friendships/ocym4za/ | `plandit/.claude/agents/persona-marcus.md` |
+| Andre Wallace, scene chaser | Q16 | "it's literally New York City. you will be able to do whatever you want." (r/columbia, Sep 2026) | https://www.reddit.com/r/columbia/comments/1wjb45x/partysocial_scene_question/paht96f/ | `plandit/.claude/agents/persona-andre.md` |
+| Andre Wallace, scene chaser | Q06 | "I think because there is SO MUCH cool stuff to do everyday, the amount of options feels overwhelming. It’s easier to do stuff when you’re already out, so if you’re leaving the house that day, make a plan to stay out and do something you’ve been interested in!" (r/nyu, Nov 2025) | https://www.reddit.com/r/nyu/comments/1omkfqp/how_do_you_not_bed_rot/nmpw1ja/ | `plandit/.claude/agents/persona-andre.md` |

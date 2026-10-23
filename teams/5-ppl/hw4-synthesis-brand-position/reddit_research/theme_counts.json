@@ -1,0 +1,45 @@
+{
+  "starting": {
+    "distinct_threads": 4,
+    "thread_ids": [
+      "1serr7p",
+      "1srrdgp",
+      "1wlb6m2",
+      "1wyyepw"
+    ]
+  },
+  "access": {
+    "distinct_threads": 3,
+    "thread_ids": [
+      "1rsvaol",
+      "1sjwdg0",
+      "1vjxvoc"
+    ]
+  },
+  "friction": {
+    "distinct_threads": 5,
+    "thread_ids": [
+      "1qh3vzb",
+      "1r2qgd5",
+      "1rsvaol",
+      "1s0s8t0",
+      "1ufsxd7"
+    ]
+  },
+  "learning": {
+    "distinct_threads": 3,
+    "thread_ids": [
+      "1sj42i3",
+      "1tzu7bl",
+      "1v9yhkb"
+    ]
+  },
+  "fatigue": {
+    "distinct_threads": 3,
+    "thread_ids": [
+      "1okf12n",
+      "1oktpuh",
+      "1wuvezc"
+    ]
+  }
+}

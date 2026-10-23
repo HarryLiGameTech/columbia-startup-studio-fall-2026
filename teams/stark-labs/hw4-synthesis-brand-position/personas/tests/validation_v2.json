@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-09",
+  "responses": [
+    {
+      "persona": "alex",
+      "response_sha256": "26cc51c96b6d075ca2252b2d01870178af2081bec24b0107fd74c9e0911efed3",
+      "contract_valid": true
+    },
+    {
+      "persona": "casey",
+      "response_sha256": "5a286104a841d06d047b99423cf0ea45bdf38740ae5174d188d85eb86bafef27",
+      "contract_valid": true
+    },
+    {
+      "persona": "jordan",
+      "response_sha256": "3e9afd34d85cd05b53a8d8a00268ca03fcfcc69718641367c3be1c49e7be209d",
+      "contract_valid": true
+    }
+  ],
+  "all_contracts_valid": true,
+  "all_must_fix_counts": {
+    "alex": 0,
+    "casey": 0,
+    "jordan": 0
+  },
+  "limits": "No synthetic review establishes real adoption, payment or usability."
+}

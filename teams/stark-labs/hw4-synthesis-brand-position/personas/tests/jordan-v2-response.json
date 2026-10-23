@@ -1,0 +1,44 @@
+{
+  "persona_id": "persona-jordan",
+  "synthetic": true,
+  "artifact": "brand_position_v2.md — frozen internal brand-position proposal",
+  "verdict": "approve",
+  "score": 8,
+  "audience_fit": "core",
+  "summary": "As a synthetic Jordan review, I approve this direction for the handoff problem I represent. It starts with the document and pictures, asks what each page needs, and leaves choices open until a person confirms them. That gives me a clearer conversation with my friend and a useful starting point for assembly. I still need to try an actual handoff before judging whether this saves effort or deserves a separate product.",
+  "strengths": [
+    "The distinction between receiving material and knowing where it belongs matches CR05's long-document-and-images problem. The homepage and About examples make the intended output understandable.",
+    "The proposal preserves the contributor's original words, separates suggested rewrites from supplied facts, and explicitly refuses to treat silence as approval. This respects meaning rather than silently deciding it for my friend.",
+    "The open-image example names a decision and asks who can confirm it. Continued discussion is part of the workflow, so I am not being promised that a form will settle an unclear message.",
+    "Starting inside the existing shared document is a credible baseline. The proposal acknowledges the RQ007 workflow and asks whether a new product actually improves on it.",
+    "Separating contributor confirmation from my judgment that the material is usable gives us distinct responsibilities without importing agency billing or contract needs into this unpaid project."
+  ],
+  "must_fix": [],
+  "nice_to_have": [
+    {
+      "issue": "The example describes the intended handoff but does not yet show a short source passage and actual image choice becoming a draft page section.",
+      "why_it_matters": "A small worked example would let me see what selection work remains for me, including material we decide not to use. This would strengthen the demonstration; it does not block approval of the internal direction.",
+      "evidence_ids": ["CR05"],
+      "suggested_change": "For the prototype, show one clearly labeled illustrative source paragraph, two candidate images, the proposed homepage section, and one unused item with its reason still open for confirmation."
+    },
+    {
+      "issue": "The document sets a good confirmation principle, but a later change to already-confirmed wording or placement is not illustrated.",
+      "why_it_matters": "I need to notice when my friend's intended meaning changes before assembling the page. RQ049 supplies a contextual warning about ready-for-layout expectations, not a claim that the CR05 participant experienced content loss.",
+      "evidence_ids": ["CR05", "RQ049"],
+      "suggested_change": "In the trial example, show a changed suggestion returning to an open decision with the earlier source retained. A shared-document note can demonstrate this without requiring a sophisticated approval system."
+    }
+  ],
+  "open_questions": [
+    "When the brief suggests a page placement my friend does not agree with, what is the smallest interaction that lets us resolve it together? The proposal has not implemented that interaction yet.",
+    "How much sorting and rewriting will I still need to do after receiving the pack, and how much explanation work will it require from my friend compared with our existing document and calls?",
+    "Will the agreed output be usable directly in our current document workflow, or will moving it into the website introduce another preparation step?",
+    "Would I use this again often enough to need a separate tool? My recurring workload and willingness to pay are unknown."
+  ],
+  "evidence_limits": [
+    "This is a synthetic evaluation of an internal positioning document using the frozen persona-jordan-v2.md and brand_position_v2.md inputs. It is not CR05's response, a product trial, or a buying commitment.",
+    "CR05 concerns one unpaid website favor. It does not establish a paid studio segment, recurring work, a budget, or measured savings; the reported additional hours were an estimate.",
+    "RQ007 and RQ049 provide external workflow context. They do not change Jordan's identity, establish matching demographics, or independently validate ClientReady.",
+    "Approval concerns the clarity and fit of the proposed direction. The brief, confirmation behavior, source preservation and export remain requirements or trial concepts, not verified product capabilities.",
+    "Core audience fit means the represented content-selection task fits the proposal. It does not establish commercial fit or superiority to a shared document, a conversation, or an existing tool."
+  ]
+}

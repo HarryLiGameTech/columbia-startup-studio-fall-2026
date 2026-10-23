@@ -1,0 +1,93 @@
+{
+  "checked_on": "2026-10-09",
+  "html_pages": 12,
+  "local_links_and_anchors": "pass",
+  "contrast": [
+    {
+      "name": "body on cream",
+      "foreground": "#4E281F",
+      "background": "#F8ECD9",
+      "ratio": 10.92,
+      "normal_text_pass": true
+    },
+    {
+      "name": "secondary on cream",
+      "foreground": "#76503F",
+      "background": "#F8ECD9",
+      "ratio": 6.02,
+      "normal_text_pass": true
+    },
+    {
+      "name": "warm white on terracotta",
+      "foreground": "#FFF7E9",
+      "background": "#943E23",
+      "ratio": 6.64,
+      "normal_text_pass": true
+    },
+    {
+      "name": "primary link on cream",
+      "foreground": "#943E23",
+      "background": "#F8ECD9",
+      "ratio": 6.05,
+      "normal_text_pass": true
+    },
+    {
+      "name": "label on white paper",
+      "foreground": "#80533E",
+      "background": "#FFFAF1",
+      "ratio": 6.26,
+      "normal_text_pass": true
+    },
+    {
+      "name": "missing status",
+      "foreground": "#87511C",
+      "background": "#FFF3D8",
+      "ratio": 5.91,
+      "normal_text_pass": true
+    },
+    {
+      "name": "dark logo text",
+      "foreground": "#F8ECD9",
+      "background": "#4E281F",
+      "ratio": 10.92,
+      "normal_text_pass": true
+    }
+  ],
+  "favicon_sizes": {
+    "16": [
+      16,
+      16
+    ],
+    "32": [
+      32,
+      32
+    ],
+    "48": [
+      48,
+      48
+    ],
+    "180": [
+      180,
+      180
+    ],
+    "192": [
+      192,
+      192
+    ],
+    "512": [
+      512,
+      512
+    ]
+  },
+  "favicon_16_alpha_values": [
+    0,
+    255
+  ],
+  "favicon_pixel_edges": "whole-pixel: alpha values 0/255 only",
+  "browser_visual_qa": "not completed; parent reported tool preview blocked; user manually previewed round-one directions 01\u201304",
+  "real_mobile_qa": "pending",
+  "issues": [],
+  "selected_logo": "02 Aligned sheets \u2014 user selected 2026-10-09",
+  "selected_page": "A Content desk \u2014 user selected 2026-10-09",
+  "logo_raster_inspection": "Selected 02 horizontal lockup and enlarged 16px favicon visually inspected; transparent cutouts render cleanly."
+}

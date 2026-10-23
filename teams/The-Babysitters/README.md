@@ -3,6 +3,7 @@
 - Mitchell Rosenthal: mr4431
 - Almog Ankori: aa5325
 - Josh Hegstad: jlh2288
+- Mansi Rank: mpr2172
 
 ## Homework
 

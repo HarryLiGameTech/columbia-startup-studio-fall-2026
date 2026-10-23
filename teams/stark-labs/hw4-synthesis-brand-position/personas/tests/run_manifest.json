@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-09",
+  "type": "synthetic persona artifact reviews",
+  "brand_input": "brand_position_v1.md",
+  "sha256": "20a819a60eeb057cba1225e9042b69ea0ef915967d2c110fd03e170ead74301c",
+  "definition_files": [
+    "../persona-alex.md",
+    "../persona-casey.md",
+    "../persona-jordan.md"
+  ],
+  "method": "Three separate Codex agent invocations; each receives one persona definition and the same frozen brand document. No result is a participant response or adoption evidence."
+}

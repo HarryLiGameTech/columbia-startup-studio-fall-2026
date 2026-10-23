@@ -1,0 +1,71 @@
+{
+  "adoption_friction": {
+    "distinct_threads": 7,
+    "thread_ids": [
+      "1o7f187",
+      "1p61x55",
+      "1q6d1vz",
+      "1tbzu56",
+      "1uqoptb",
+      "1v3j8w7",
+      "1w5hlb9"
+    ]
+  },
+  "client_waiting": {
+    "distinct_threads": 1,
+    "thread_ids": [
+      "1sci8yg"
+    ]
+  },
+  "cms_boundary": {
+    "distinct_threads": 5,
+    "thread_ids": [
+      "1pta50j",
+      "1q6d1vz",
+      "1tqkyfv",
+      "1tya16g",
+      "1v5vhb3"
+    ]
+  },
+  "content_preparation": {
+    "distinct_threads": 11,
+    "thread_ids": [
+      "1o7f187",
+      "1qecnm4",
+      "1qj7slu",
+      "1qu33wf",
+      "1tbbn27",
+      "1uqoptb",
+      "1v5vhb3",
+      "1vw5wad",
+      "1wfwk38",
+      "1wjvyxi",
+      "1x1cxg5"
+    ]
+  },
+  "generic_ai_language": {
+    "distinct_threads": 1,
+    "thread_ids": [
+      "1vw5wad"
+    ]
+  },
+  "scope_and_responsibility": {
+    "distinct_threads": 7,
+    "thread_ids": [
+      "1o7f187",
+      "1qecnm4",
+      "1qu33wf",
+      "1uqoptb",
+      "1v3j8w7",
+      "1vw5wad",
+      "1wjvyxi"
+    ]
+  },
+  "source_control": {
+    "distinct_threads": 2,
+    "thread_ids": [
+      "1qj7slu",
+      "1uqoptb"
+    ]
+  }
+}

@@ -1,0 +1,342 @@
+<!doctype html>
+<!-- Claude Daycare style round 3, direction Inside the Lines (refined from round 2). Concept sketch, not a shipped page. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Claude Daycare, style round 3: Inside the Lines</title>
+<meta name="description" content="Style round 3, direction Inside the Lines. Claude Daycare and its highlighted feature, Allowance Guardrails, drawn as one visit across a playing field, turn by turn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400..600&amp;display=swap">
+<!--
+  Fonts (both SIL Open Font License 1.1, served by Google Fonts; licence files read on 2026-10-09):
+    IBM Plex Mono  https://fonts.google.com/specimen/IBM+Plex+Mono  licence https://github.com/google/fonts/blob/main/ofl/ibmplexmono/OFL.txt
+    IBM Plex Sans  https://fonts.google.com/specimen/IBM+Plex+Sans  licence https://github.com/google/fonts/blob/main/ofl/ibmplexsans/OFL.txt
+    Both carry the Reserved Font Name "Plex": a modified or subset copy must not use that name.
+  Icons: Lucide "arrow-down" and "house" (https://lucide.dev), paths as in lucide-icons/lucide main on 2026-10-09.
+    Lucide is ISC licensed, Copyright (c) 2026 Lucide Icons and Contributors.
+    arrow-down is one of the Feather-derived icons, so it is also under the MIT License, Copyright (c) 2013-present Cole Bemis.
+  The playing field, square nodes and rail ticks are hand-written inline SVG or CSS. No downloaded images, no scripts.
+-->
+<style>
+:root {
+  --ground: #0B1F0F;
+  --ground-2: #0E2813;
+  --field: #174A1F;
+  --stripe: #1A5022;
+  --ink: #EAF3E3;
+  --ink-faint: #B5CFAC;
+  --line: #2F5233;
+  --accent: #F5D547;
+  --accent-ink: #14290E;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --tick-v: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M16 .5H4M16 8.5h-6' fill='none' stroke='%23B5CFAC'/%3E%3C/svg%3E");
+  --tick-h: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M.5 16V4M8.5 16v-6' fill='none' stroke='%23B5CFAC'/%3E%3C/svg%3E");
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+.wrap { width: min(100% - 2rem, 80rem); margin-inline: auto; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.skip {
+  position: absolute; left: 1rem; top: -6rem; z-index: 10;
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem;
+  background: var(--accent); color: var(--accent-ink); font: 500 .875rem var(--mono); border-radius: 4px;
+}
+.skip:focus { top: 1rem; }
+
+.label { margin: 0; font: 500 .75rem/1.45 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); }
+.tag {
+  display: inline-block; margin: 0; padding: .2rem .45rem;
+  font: 500 .75rem/1.25 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 2px; white-space: nowrap;
+}
+.navlink {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 .25rem;
+  font: 400 .875rem var(--mono); color: var(--ink);
+  text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .35em;
+}
+.navlink:hover { color: var(--accent); }
+
+.top-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 4.5rem; }
+.brand { margin: 0; font: 600 .9375rem/1 var(--mono); letter-spacing: -.01em; }
+
+/* Section frame: 1px lines, small open square nodes at the corners, a narrow ticked rail */
+.sect { position: relative; border-top: 1px solid var(--line); --node-bg: var(--ground); }
+.sect::before, .sect::after {
+  content: ""; position: absolute; top: -4px; width: 7px; height: 7px;
+  border: 1px solid var(--ink-faint); background: var(--node-bg);
+}
+.sect::before { left: -4px; }
+.sect::after { right: -4px; }
+.rail {
+  display: flex; align-items: flex-start; gap: .75rem; height: 2.5rem; padding-top: .6rem;
+  border-bottom: 1px solid var(--line); background: var(--tick-h) repeat-x left bottom;
+}
+.rail-label { font: 500 .75rem/1.2 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint); }
+.content { padding: 2rem 0 3rem; }
+
+/* Hero */
+h1 {
+  margin: 1rem 0 0; font-family: var(--mono); font-weight: 500;
+  font-size: clamp(2rem, .8rem + 4.2vw, 4.5rem); line-height: 1.08; letter-spacing: -.04em; text-wrap: balance;
+}
+h1 span { display: block; }
+.hero-copy { display: grid; gap: 1.75rem; margin-top: 2rem; }
+.hero-copy .text { display: grid; gap: 1rem; max-width: 40rem; }
+.sub { margin: 0; font-size: 1.25rem; line-height: 1.5; text-wrap: pretty; }
+.cta { display: grid; gap: 1rem; justify-items: start; align-content: end; }
+.btns { display: flex; flex-wrap: wrap; gap: .75rem; }
+.works { margin: 0; font: 400 .75rem/1.5 var(--mono); letter-spacing: .06em; color: var(--ink-faint); }
+
+.btn {
+  display: inline-flex; align-items: stretch; min-height: 3.25rem;
+  border: 1px solid var(--accent); border-radius: 4px;
+  font: 500 .8125rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; text-decoration: none;
+}
+.btn-label { display: flex; align-items: center; padding: 0 1.125rem; }
+.btn-ico { display: grid; place-items: center; width: 3.25rem; border-left: 1px solid currentColor; }
+.btn-ico svg { width: 18px; height: 18px; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+.btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-secondary:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Field figure */
+.pitch { margin: 3rem 0 0; }
+.pitch-head { display: grid; gap: .4rem; margin-bottom: 1.5rem; }
+.pitch-head .name { margin: 0; font: 500 1.125rem/1.35 var(--mono); letter-spacing: -.02em; max-width: 40ch; }
+.field { display: block; width: 100%; height: auto; }
+.field-h { display: none; }
+.legend { list-style: none; margin: 1.75rem 0 0; padding: 0; display: grid; gap: 1.25rem; }
+.legend li { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: .25rem 1rem; align-items: start; align-content: start; }
+.legend svg { width: 3rem; height: 1.5rem; margin-top: .1rem; }
+.legend .body { display: grid; gap: .5rem; justify-items: start; }
+.legend p { margin: 0; font-size: .9375rem; line-height: 1.5; color: var(--ink-faint); }
+.legend strong { display: block; margin-bottom: .15rem; font: 500 .75rem/1.45 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); }
+.cap { margin: 1.5rem 0 0; font: 400 .8125rem/1.6 var(--mono); color: var(--ink-faint); max-width: 72ch; }
+
+/* How it works */
+.how { background: var(--ground-2); }
+.how .sect { --node-bg: var(--ground-2); }
+h2 {
+  margin: .75rem 0 0; font-family: var(--mono); font-weight: 500;
+  font-size: clamp(1.75rem, 1.1rem + 2.2vw, 2.75rem); line-height: 1.12; letter-spacing: -.035em; max-width: 18ch;
+}
+.steps { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; }
+.step { position: relative; padding: 1.75rem 0 2rem; border-top: 1px solid var(--line); --node-bg: var(--ground-2); }
+.step::before { content: ""; position: absolute; top: -4px; left: -4px; width: 7px; height: 7px; border: 1px solid var(--ink-faint); background: var(--node-bg); }
+.num {
+  display: grid; place-items: center; width: 2.75rem; height: 2.75rem; margin-bottom: 1.25rem;
+  border: 1px solid var(--ink); border-radius: 2px; font: 500 1rem/1 var(--mono);
+}
+h3 { margin: 0 0 .5rem; font: 500 1.25rem/1.3 var(--mono); letter-spacing: -.02em; }
+.step p { margin: 0; max-width: 36ch; color: var(--ink-faint); }
+
+.foot { border-top: 1px solid var(--line); padding: 1.75rem 0 2.5rem; background: var(--ground-2); }
+.foot-row { display: grid; gap: .75rem; align-items: center; }
+.foot p { margin: 0; font: 400 .8125rem/1.55 var(--mono); color: var(--ink-faint); max-width: 64ch; }
+.foot .navlink { justify-self: start; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn-ico svg { transition: transform .2s ease; }
+  .btn:hover .btn-ico svg { transform: translateY(3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+@media (min-width: 700px) {
+  .field-v { display: none; }
+  .field-h { display: block; }
+  .legend { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+}
+@media (min-width: 900px) {
+  .sect { display: grid; grid-template-columns: 4rem minmax(0, 1fr); border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+  .rail {
+    display: block; height: auto; padding: 1.5rem 0 0; border-bottom: 0; border-right: 1px solid var(--line);
+    background: var(--tick-v) repeat-y right top;
+  }
+  .rail-label { position: sticky; top: 1.5rem; display: inline-block; writing-mode: vertical-rl; transform: rotate(180deg); margin-left: 1.25rem; background: var(--node-bg); padding: .5rem 0; }
+  .content { padding: 2.5rem 2rem 4rem; }
+  .hero-copy { margin-top: 2.5rem; }
+  .pitch { margin-top: 3.5rem; }
+  .legend { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem 1.5rem; }
+  .legend li { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 3rem; }
+  .step { padding: 2rem 2rem 2.5rem; border-left: 1px solid var(--line); }
+  .step:first-child { border-left: 0; padding-left: 0; }
+  .foot-row { grid-template-columns: 1fr auto; gap: 2rem; }
+}
+@media (min-width: 1200px) {
+  .hero-copy { grid-template-columns: minmax(0, 1fr) auto; gap: 3rem; align-items: end; }
+  .legend { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5rem; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap top-row">
+    <p class="brand">Claude Daycare</p>
+    <a class="navlink" href="#how">How it works</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap sect">
+      <div class="rail" aria-hidden="true"><span class="rail-label">01 The pitch</span></div>
+      <div class="content">
+        <p class="label">Highlighted feature: Allowance Guardrails</p>
+        <h1 id="hero-title"><span>Set the allowance first.</span> <span>Then let your agent play.</span></h1>
+
+        <div class="hero-copy">
+          <div class="text">
+            <p class="sub">Before each visit you choose a weekly percentage or a token cap. It is checked between turns, so a visit can end a little over it.</p>
+            <p class="works">Works with Claude Code, Codex CLI and OpenCode.</p>
+          </div>
+          <div class="cta">
+            <div class="btns">
+              <a class="btn btn-primary" href="#how"><span class="btn-label">See how it works</span><span class="btn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></span></a>
+              <a class="btn btn-secondary" href="#cap"><span class="btn-label">How the cap is checked</span><span class="btn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></span></a>
+            </div>
+          </div>
+        </div>
+
+        <figure class="pitch" id="cap" aria-labelledby="cap-title">
+          <div class="pitch-head">
+            <p class="label" id="cap-title">How the cap is checked</p>
+            <p class="name">One visit drawn as a path across a playing field, turn by turn.</p>
+          </div>
+          <!-- landscape field, shown from 700px up. Usage runs left to right. -->
+          <svg class="field field-h" viewBox="0 0 960 420" aria-hidden="true" focusable="false">
+            <defs>
+              <pattern id="hatch-h" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="14" style="fill:var(--ink-faint)"/></pattern>
+            </defs>
+            <rect width="960" height="420" style="fill:var(--field)"/>
+            <rect x="0" width="160" height="420" style="fill:var(--stripe)"/>
+            <rect x="320" width="160" height="420" style="fill:var(--stripe)"/>
+            <rect x="640" width="160" height="420" style="fill:var(--stripe)"/>
+            <g fill="none" style="stroke:var(--ink-faint)" stroke-width="1.5">
+              <rect x="16" y="130" width="130" height="160"/>
+              <line x1="400" y1="16" x2="400" y2="404"/>
+              <circle cx="400" cy="210" r="58"/>
+            </g>
+            <rect x="16" y="16" width="928" height="388" fill="none" style="stroke:var(--ink)" stroke-width="2"/>
+            <rect x="701" y="17" width="242" height="386" fill="url(#hatch-h)"/>
+            <line x1="700" y1="16" x2="700" y2="404" style="stroke:var(--ink)" stroke-width="4"/>
+            <line x1="600" y1="30" x2="600" y2="390" style="stroke:var(--ink)" stroke-width="3" stroke-dasharray="12 8"/>
+            <polyline points="80,320 190,240 300,320 400,170 510,250 626,200" fill="none" style="stroke:var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+            <g style="fill:var(--ink)">
+              <circle cx="80" cy="320" r="7"/><circle cx="190" cy="240" r="7"/><circle cx="300" cy="320" r="7"/><circle cx="400" cy="170" r="7"/><circle cx="510" cy="250" r="7"/><circle cx="626" cy="200" r="7"/>
+            </g>
+            <polyline points="626,200 648,262 666,330" fill="none" style="stroke:var(--accent)" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>
+            <circle cx="648" cy="262" r="6" style="fill:var(--field);stroke:var(--accent)" stroke-width="3"/>
+            <g class="home"><circle cx="666" cy="336" r="24" style="fill:var(--accent)"/>
+              <g transform="translate(654 324)" fill="none" style="stroke:var(--accent-ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></g></g>
+          </svg>
+          <!-- portrait field, shown below 700px. Usage runs bottom to top. -->
+          <svg class="field field-v" viewBox="0 0 420 560" aria-hidden="true" focusable="false">
+            <defs>
+              <pattern id="hatch-v" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="14" style="fill:var(--ink-faint)"/></pattern>
+            </defs>
+            <rect width="420" height="560" style="fill:var(--field)"/>
+            <rect y="0" width="420" height="93" style="fill:var(--stripe)"/>
+            <rect y="186" width="420" height="93" style="fill:var(--stripe)"/>
+            <rect y="372" width="420" height="93" style="fill:var(--stripe)"/>
+            <g fill="none" style="stroke:var(--ink-faint)" stroke-width="1.5">
+              <rect x="110" y="476" width="200" height="68"/>
+              <line x1="16" y1="410" x2="404" y2="410"/>
+              <circle cx="210" cy="410" r="44"/>
+            </g>
+            <rect x="16" y="16" width="388" height="528" fill="none" style="stroke:var(--ink)" stroke-width="2"/>
+            <rect x="17" y="17" width="386" height="132" fill="url(#hatch-v)"/>
+            <line x1="16" y1="150" x2="404" y2="150" style="stroke:var(--ink)" stroke-width="4"/>
+            <line x1="30" y1="260" x2="390" y2="260" style="stroke:var(--ink)" stroke-width="3" stroke-dasharray="12 8"/>
+            <polyline points="80,500 190,446 110,380 250,340 150,292 236,236" fill="none" style="stroke:var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+            <g style="fill:var(--ink)">
+              <circle cx="80" cy="500" r="7"/><circle cx="190" cy="446" r="7"/><circle cx="110" cy="380" r="7"/><circle cx="250" cy="340" r="7"/><circle cx="150" cy="292" r="7"/><circle cx="236" cy="236" r="7"/>
+            </g>
+            <polyline points="236,236 296,214 344,194" fill="none" style="stroke:var(--accent)" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>
+            <circle cx="296" cy="214" r="6" style="fill:var(--field);stroke:var(--accent)" stroke-width="3"/>
+            <g class="home"><circle cx="350" cy="192" r="24" style="fill:var(--accent)"/>
+              <g transform="translate(338 180)" fill="none" style="stroke:var(--accent-ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></g></g>
+          </svg>
+
+          <ul class="legend" role="list">
+            <li>
+              <svg viewBox="0 0 48 24" aria-hidden="true" focusable="false"><line x1="6" y1="12" x2="42" y2="12" style="stroke:var(--ink)" stroke-width="3"/><circle cx="6" cy="12" r="5" style="fill:var(--ink)"/><circle cx="42" cy="12" r="5" style="fill:var(--ink)"/></svg>
+              <div class="body"><p><strong>A turn</strong>Each line is one turn. Your agent plays with Daycare's own tools only.</p></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 24" aria-hidden="true" focusable="false"><circle cx="24" cy="12" r="6" style="fill:var(--ink)"/></svg>
+              <div class="body"><p><strong>A check</strong>At each dot, between turns, the allowance is checked. Never during a turn.</p></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 24" aria-hidden="true" focusable="false"><path d="M2 12H46" fill="none" style="stroke:var(--ink)" stroke-width="3" stroke-dasharray="9 6"/></svg>
+              <div class="body"><p><strong>The allowance line</strong>5% in this example. The turn that crosses it finishes, so the visit ends a little past it.</p></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 24" aria-hidden="true" focusable="false"><path d="M3 12H22" fill="none" style="stroke:var(--accent)" stroke-width="3" stroke-dasharray="5 4" stroke-linecap="round"/><circle cx="36" cy="12" r="11" style="fill:var(--accent)"/><g transform="translate(29 5) scale(.58)" fill="none" style="stroke:var(--accent-ink)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></g></svg>
+              <div class="body"><p><strong>Homecoming</strong>Two more turns: one can save memories, one writes the day report. They run after the line and are not bounded by it.</p></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 24" aria-hidden="true" focusable="false"><defs><pattern id="hatch-key" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.2" height="7" style="fill:var(--ink-faint)"/></pattern></defs><rect x="8" y="2" width="36" height="20" fill="url(#hatch-key)"/><line x1="8" y1="2" x2="8" y2="22" style="stroke:var(--ink)" stroke-width="3"/></svg>
+              <div class="body"><p><strong>Work buffer</strong>The last 30%, held back for work.</p><span class="tag">Concept, not shipped</span></div>
+            </li>
+          </ul>
+          <figcaption class="cap">Numbers are illustrative. The meter reads in whole percentage points. On OpenCode the allowance is a token cap, which can stop a turn in progress.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap sect">
+      <div class="rail" aria-hidden="true"><span class="rail-label">02 The plays</span></div>
+      <div class="content">
+        <p class="label">The visit</p>
+        <h2 id="how-title">How it works in three steps</h2>
+        <ol class="steps" role="list">
+          <li class="step">
+            <span class="num" aria-hidden="true">1</span>
+            <h3>Set the allowance</h3>
+            <p>Before a visit, choose a weekly percentage (Claude Code, Codex) or a token cap (OpenCode).</p>
+          </li>
+          <li class="step">
+            <span class="num" aria-hidden="true">2</span>
+            <h3>Send your agent</h3>
+            <p>It plays with Daycare's own tools only. The allowance is checked between turns: once it has run out, the turn in progress finishes and your agent comes home.</p>
+          </li>
+          <li class="step">
+            <span class="num" aria-hidden="true">3</span>
+            <h3>Read what happened</h3>
+            <p>Two homecoming turns follow: one can save memories, the other writes the day report. They run after the cap. The command line also prints about how much weekly usage moved while the visit ran.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <p>Concept sketch for The Babysitters (Columbia COMS W4995, Fall 2026). Not affiliated with or endorsed by Anthropic.</p>
+    <a class="navlink" href="index.html">Both round 3 directions</a>
+  </div>
+</footer>
+</body>
+</html>

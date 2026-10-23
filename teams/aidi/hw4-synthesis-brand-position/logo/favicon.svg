@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Aplovia favicon">
+  <rect width="512" height="512" rx="88" fill="#172331"/>
+  <g fill="#FFFFFF" transform="translate(124 115.2) scale(1.1)">
+    <path d="M120 8 60 132h120L120 8Z"/>
+    <path d="M57 140 0 256h55.5l-9-14L75 178l-18-38Z"/>
+    <path d="M183 140 240 256h-55.5l9-14-28.5-64 18-38Z"/>
+    <path d="M66 140h28.5l25.5 58 25.5-58H174l-54 116-54-116Z"/>
+  </g>
+</svg>
