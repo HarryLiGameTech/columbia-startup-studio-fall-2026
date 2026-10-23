@@ -32,4 +32,4 @@ October 23, 2026, at the start of class (1:10 PM New York time). The [official r
 
 ## Sources and supporting material
 
-The current assignment text supplied by Zhangcheng (Charles) on October 21, 2026 specifies `teams/zeroone/hw6-demand-plan-and-analytics/` and one team pull request. The pull request is the submission; nothing is submitted on Courseworks. Supporting MVP context is in `mvp_doc.md`. Marketing support: [weekly plan](weekly-plan.md), [blog draft](blog-draft.md), and [analytics setup](analytics.md). Publication evidence remains in the earlier [HW5 submission](../hw5-mvp-doc-and-pages/demand_strategy.md).
+The current assignment text supplied by Zhangcheng (Charles) on October 21, 2026 specifies `teams/zeroone/hw6-demand-plan-and-analytics/` and one team pull request. The pull request is the submission; nothing is submitted on Courseworks. Supporting MVP context is in `mvp_doc.md`. Marketing support: [weekly plan](weekly-plan.md), [blog draft](blog-draft.md), and [analytics setup](analytics.md). Publication evidence remains in the [HW5 course PR](https://github.com/kenxle/columbia-startup-studio-fall-2026/pull/48).

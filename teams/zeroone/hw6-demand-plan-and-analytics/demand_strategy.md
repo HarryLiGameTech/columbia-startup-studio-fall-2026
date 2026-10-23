@@ -6,7 +6,7 @@
 
 ## How this file maps to the assignment
 
-The class does not define a separate "marketing specification". The graded marketing deliverable is `demand_strategy.md`, with five required items (Class 6, "Homework: your demand strategy"). Sections 1 to 5 below follow those five items in the slide's order and wording. Sections 6 to 10 are the rest of the marketing specification the team asked for. To submit, Zhangcheng (Charles) copies this file as `demand_strategy.md` into `teams/zeroone/hw6-demand-plan-and-analytics/` and opens the team pull request. The pull request is the submission. Source: the current assignment text supplied by Zhangcheng (Charles) on October 21, 2026. The evidence for published posts stays in [demand_strategy.md](../hw5-mvp-doc-and-pages/demand_strategy.md) (the HW5 record) and is linked, not repeated.
+The class does not define a separate "marketing specification". The graded marketing deliverable is `demand_strategy.md`, with five required items (Class 6, "Homework: your demand strategy"). Sections 1 to 5 below follow those five items in the slide's order and wording. Sections 6 to 10 are the rest of the marketing specification the team asked for. To submit, Zhangcheng (Charles) copies this file as `demand_strategy.md` into `teams/zeroone/hw6-demand-plan-and-analytics/` and opens the team pull request. The pull request is the submission. Source: the current assignment text supplied by Zhangcheng (Charles) on October 21, 2026. The evidence for published posts stays in [HW5 submission evidence](https://github.com/kenxle/columbia-startup-studio-fall-2026/pull/48) (the HW5 record) and is linked, not repeated.
 
 The October 23 Courseworks instructions require a semester-wide plan to drive 100 signups. This document now includes a weekly schedule and a planning model below. Reach figures are estimates for planning. They are not measured audience sizes or confirmed commitments.
 
@@ -34,7 +34,7 @@ Planning reach assumptions for the remaining semester: Columbia group chats, 20â
 
 ## 3. Your first 3 posts, each linking to a landing page with a UTM
 
-Three posts are published, all from Emily's personal accounts. The published links, captions and link checks are in [demand_strategy.md](../hw5-mvp-doc-and-pages/demand_strategy.md), sections 4, 5 and 9.
+Three posts are published, all from Emily's personal accounts. The published links, captions and link checks are in [HW5 submission evidence](https://github.com/kenxle/columbia-startup-studio-fall-2026/pull/48), sections 4, 5 and 9.
 
 | Post | Platform | Landing page | UTM link | Status |
 | --- | --- | --- | --- | --- |
@@ -55,7 +55,7 @@ The next three posts (A1 to A3, week of 2026-10-19) are drafted in section 7.
 - **What to write down first:** the question, the choices, the closing time, and what counts, including the source for the result.
 - **A worked example:** "Will the Knicks finish top four in the East?", with what counts defined as the final regular-season standings, and answers closing before the first game.
 
-Emily's planned post ("Everyone says 'I called it.' What should a group prediction record keep?", linking to `/for/friends`) is the second blog idea. Its outline is in [demand_strategy.md](../hw5-mvp-doc-and-pages/demand_strategy.md), section 7.
+Emily's planned post ("Everyone says 'I called it.' What should a group prediction record keep?", linking to `/for/friends`) is the second blog idea. Its outline is in [HW5 submission evidence](https://github.com/kenxle/columbia-startup-studio-fall-2026/pull/48), section 7.
 
 ## 5. Your welcome email, automated
 
