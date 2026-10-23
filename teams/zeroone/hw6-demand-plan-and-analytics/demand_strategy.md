@@ -8,6 +8,8 @@
 
 The class does not define a separate "marketing specification". The graded marketing deliverable is `demand_strategy.md`, with five required items (Class 6, "Homework: your demand strategy"). Sections 1 to 5 below follow those five items in the slide's order and wording. Sections 6 to 10 are the rest of the marketing specification the team asked for. To submit, Zhangcheng (Charles) copies this file as `demand_strategy.md` into `teams/zeroone/hw6-demand-plan-and-analytics/` and opens the team pull request. The pull request is the submission. Source: the current assignment text supplied by Zhangcheng (Charles) on October 21, 2026. The evidence for published posts stays in [demand_strategy.md](../hw5-mvp-doc-and-pages/demand_strategy.md) (the HW5 record) and is linked, not repeated.
 
+The October 23 Courseworks instructions require a semester-wide plan to drive 100 signups. This document now includes a weekly schedule and a planning model below. Reach figures are estimates for planning. They are not measured audience sizes or confirmed commitments.
+
 ## 1. Your traffic owners, by name
 
 | Owner | Responsibility |
@@ -27,6 +29,8 @@ Our HW4 Reddit research list ([thread_list.md](../hw4-synthesis-brand-position/r
 | **r/FFCommish** | League organizers there describe our exact problem: terms people remember differently, and no record of what was agreed. | Value first. Answer real league-management questions from experience. The rules forbid tool promotion, so no CallIt post and no link. |
 | **r/SideProject** | The research found prediction-pool builders asking how to define results. Builders give direct product feedback. | Our two Reddit posts (r/SideProject and r/sideprojects) were removed by Reddit's filters on 2026-10-16. We asked the moderators for a review and post nothing more until it is answered. |
 | **Columbia friend groups** (added after the research) | Warm reach with no promotion filter, and the audience our interviews support best: existing friend groups that already make calls. | Founder messages from our own accounts, in chats we belong to. Groups that say yes get a room invitation link to the live app. |
+
+Planning reach assumptions for the remaining semester: Columbia group chats, 20–100 readers per relevant chat; founder social posts, 100–500 views per post; r/FFCommish contributions, 50–300 readers per useful thread. These are rough ranges for planning only. We have not collected member counts, platform analytics, or permission to promote in the forums. Count observed reach from each platform where available, and use tagged landing-page sessions as the visit measure.
 
 ## 3. Your first 3 posts, each linking to a landing page with a UTM
 
@@ -55,7 +59,9 @@ Emily's planned post ("Everyone says 'I called it.' What should a group predicti
 
 ## 5. Your welcome email, automated
 
-**Status: merged on 2026-10-17, live after two server steps.** Yuval built it in [PR #7](https://github.com/Yuval-Gerber/CallIt/pull/7), approved by Elad. `waitlist-service/email.js` sends the copy below, word for word, through Resend. It goes out after the signup response, so it never blocks the signup. Each delivery is recorded per address, so the email never repeats, and failed sends are retried with backoff. It starts sending once Elad updates the hosted database schema and places the sending key on the server. A test signup with a fresh address then confirms delivery. Wording changes go through `waitlist-service/email.js`.
+**Status: live.** The welcome email sends after a new signup. Delivery is asynchronous. Provider acceptance does not establish recipient inbox placement.
+
+Yuval built the automation in [PR #7](https://github.com/Yuval-Gerber/CallIt/pull/7), approved by Elad. `waitlist-service/email.js` sends the copy below through Resend after the signup response. Delivery state is recorded per address, and failed sends are retried with backoff. Copy changes go through that source file. Evidence: Yuval's October 23 database/server read-back on the team Bulletin Board.
 
 **Trigger:** a new waitlist signup on any landing page, sent once per email address.
 **From:** CallIt, from the team's sending address. **Subject:** You're on the CallIt list.
@@ -90,6 +96,8 @@ The homepage is [call-it.app](https://call-it.app). Every page has one call to a
 
 ## 7. Channels, the post calendar and the weekly loop
 
+The original first-week calendar below preserves the posts and tagged links already documented. The semester schedule follows it.
+
 | Day | Post | Where | Page | UTM link |
 | --- | --- | --- | --- | --- |
 | Mon 10-19 | A1: founder post, the app is live | LinkedIn, Aviv | friends | `https://call-it.app/for/friends?utm_source=linkedin&utm_medium=post&utm_campaign=launch&utm_content=aviv_live` |
@@ -103,6 +111,47 @@ The full post copy is in [docs/demand_strategy.md](weekly-plan.md), our weekly p
 2. **Monday to Friday:** publish three posts and record each live link the same day.
 3. **Within 24 hours of each post:** reply to real comments.
 4. **Friday:** post a summary to the team.
+
+### Semester schedule and reach estimate
+
+The plan covers the eight remaining weeks from October 26 through December 18. The target is 100 additional waitlist signups. At a 1% signup rate, this needs 10,000 visits, or 1,250 visits per week. The signup rate is a planning ceiling, not a measured conversion rate. Current evidence is too small to calculate a reliable rate.
+
+| Week | Traffic owner | Planned activity | Planning reach assumption | Visit target |
+| --- | --- | --- | ---: | ---: |
+| Oct 26–Nov 1 | Emily, with Aviv | One founder social post; one warm group-chat invitation; answer relevant organizer questions without promotion in r/FFCommish. | 1,500 people | 1,250 |
+| Nov 2–8 | Emily, with Aviv | One social post with a real product clip; one group-chat invitation; one community contribution. | 1,500 people | 1,250 |
+| Nov 9–15 | Emily, with Aviv | Publish one problem-focused blog article; one social post linking to it; one group-chat invitation. | 1,500 people | 1,250 |
+| Nov 16–22 | Emily, with Aviv | One tactical social post; invite a second warm group to try a real call; one community contribution. | 1,500 people | 1,250 |
+| Nov 23–29 | Emily, with Aviv | One founder-journey post tied to a real product lesson; light holiday-week group outreach. | 1,500 people | 1,250 |
+| Nov 30–Dec 6 | Emily, with Aviv | Publish one solution explainer; one social post; invite one group to use a call during the week. | 1,500 people | 1,250 |
+| Dec 7–13 | Emily, with Aviv | One user-problem post; one social post; share the explainer with relevant warm groups. | 1,500 people | 1,250 |
+| Dec 14–18 | Emily, with Aviv | One semester learning post and final warm outreach; report results before Demo Day. | 1,500 people | 1,250 |
+
+**Estimate method:** the 1,500 weekly reach is a working assumption for combined personal social reach, warm group messages, and community reading. Platform follower counts and group sizes have not been collected. Replace this estimate with observed reach and unique landing-page sessions each Monday. Do not add overlapping channel reach as unique visitors without deduplication.
+
+**Back-of-napkin result:** 8 × 1,250 = 10,000 visits. At the maximum planning rate of 1%, this yields 100 signups. If the actual rate is lower, the plan needs more traffic or more weeks. The current 11 real signups are the starting snapshot, not a conversion rate; the 212 design views include tests and cannot be used as the denominator.
+
+### Blog schedule
+
+Use the four article types from Class 6 slide 45. Emily reviews; Aviv drafts and publishes. Each article links to the matching audience page with lowercase UTMs.
+
+| Target week | Type | Working title | Destination |
+| --- | --- | --- | --- |
+| Nov 9–15 | Problem-focused | Why friend groups remember the same prediction differently | `/for/friends` |
+| Nov 23–29 | Founder journey | What our first user interviews changed about CallIt | `/for/agreements` |
+| Nov 30–Dec 6 | Solution explainer | How a group can keep a prediction and its result together | `/for/agreements` |
+| Dec 7–13 | Tactical advice | A short guide to writing a prediction with clear terms | `/for/sports` |
+
+These are proposed dates. Emily and Aviv must confirm capacity and the publishing destination. The NBA season-calls draft remains a supporting article idea.
+
+### Email lifecycle
+
+- **New waitlist signup:** send the existing welcome email once per address. Yuval reported three sends accepted by Resend since activation. Provider acceptance does not prove inbox placement.
+- **Product update:** Aviv and Emily prepare a short newsletter only when there is a real product change or a useful pilot result. The team has not approved a newsletter cadence.
+- **Pilot invitation:** invite a group that agrees to try the product. Emily tracks the invitation and responses. Do not send automated activity emails; notifications are not part of the current product.
+- **After a pilot call closes:** the manager records the result in the app. The team asks participants for feedback through the group's agreed channel.
+
+Confirm email consent, owner capacity, and any newsletter schedule before sending new campaign email.
 
 ## 8. The numbers we track and where they are read
 
