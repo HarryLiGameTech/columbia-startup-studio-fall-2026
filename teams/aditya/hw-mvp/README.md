@@ -19,9 +19,9 @@ Production is the waitlist site, at [www.gable.fit](https://www.gable.fit) (also
 
 ## MVP link
 
-**MVP (staging):** https://gable-git-staging-gable2.vercel.app
+**MVP:** https://www.gable.fit
 
-This is the working product: describe a sublet, get a short list, sign in, and save favorites. It's the `staging` branch, kept separate from the waitlist site so testing never touches real signups.
+This is the live site people see. We test changes on a separate staging branch first, so work in progress never reaches it.
 
 ## Docs
 
