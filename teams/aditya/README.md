@@ -9,3 +9,7 @@
 ## Homework 3
 
 - [Customer interviews: scripts, raw notes, snapshots, and analysis](hw3-interviews/README.md)
+
+## MVP (Oct 23)
+
+- [Pages, MVP link, MVP doc and demand strategy](hw-mvp/README.md)
