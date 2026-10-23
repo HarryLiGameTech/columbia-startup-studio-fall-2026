@@ -144,6 +144,6 @@ The measured pages are the [homepage](https://call-it.app/), [Friends](https://c
 
 A real signup on October 16 confirmed that the address is saved. A browser check on October 22 confirmed that all four pages load the Google tag and that the thank-you page sends one signup event, with none on reload. On October 23, all five public pages returned HTTP 200, and the deployed JavaScript contained the Google tag, signup event, thank-you route, and signup endpoint.
 
-The current GA4 key-event setting and a dated Realtime capture remain unverified. Code presence and recorded event requests do not prove those dashboard settings. Standard reports can take 24 to 48 hours to populate.
+GA4 exports dated October 23, 2026 show 7 signup events received from October 16 to 22 and 83 active users since tracking began on October 15. These counts include team verification visits and signups. The signup event was not marked as a key event during that period, so key-event counts are 0 through October 22. Confirmation of the current key-event setting and a dated Realtime capture remain pending. Standard reports can take 24 to 48 hours to populate.
 
 Review sessions, signup events, and source/page breakdowns weekly. Do not calculate a measured conversion rate from the legacy page-view count, which includes verification visits and is incomplete for the homepage.
