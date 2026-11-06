@@ -4,11 +4,7 @@
 
 ## 1. What it is and why
 
-Every week, each team writes a short update: what you built, what you're building next, how many users you have, what changed in your demand strategy, and what's blocking you.
-
-The "why" matters most. Anyone can list tasks. The update should show that you're making choices about what to build and what to skip.
-
-**How long:** half a page. Not a novel.
+A weekly update is a common practice that helps you to maintain a cadence of work, but also helps you to see what you have gotten done over time. It will help you to order your thoughts and direction you are going, and keep accountable to what you intend to do.
 
 ## 2. How to submit
 
