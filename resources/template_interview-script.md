@@ -23,7 +23,7 @@ Use this script for every usability session in Homework 7.
 - [ ] Product open in a fresh browser window. Logged out.
 - [ ] Note-taker ready with the [usability notes template](template_usability-notes.md).
 
-### Brief the participant (read this out loud)
+### Brief the participant (read this out loud, verbatim)
 
 > "Thanks for helping us today by testing our product. I want to start by saying that we are testing the product, not you. There are no wrong answers. If something is confusing, that is helpful for us to know.  
 >  
@@ -49,7 +49,7 @@ Write out a list of tasks for them to perform, starting at your homepage, probab
 - Do they finish, or give up?
 
 **Task 2: Get a dinner idea (aha moment)**  
-**Say:** "Pretend you have chicken, rice, spinach, and a lemon at home. Find something you could make for dinner tonight."  
+**Say:** "Think about what's in your fridge and pantry. Find something you could make for dinner tonight."  
 **Watch for:**
 - Do they find where to enter ingredients?
 - Do they reach a recipe they say they'd actually cook?
@@ -68,6 +68,6 @@ Ask a few questions to get deeper on what they understood and not. You can also 
 
 ### Close
 
-> "Thank you. This was really helpful."
+> "Thank you. This was really helpful. Any other feedback you'd like to add?"
 
 Stop the recording. Write a short summary right away while it's fresh.
