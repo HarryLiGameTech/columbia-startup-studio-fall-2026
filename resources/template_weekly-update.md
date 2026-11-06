@@ -11,14 +11,11 @@ If you go on to make a startup yourself, I highly recommend maintaining this pra
 ## 2. How to submit
 
 - **When:** before class every Friday. The first one is due Friday, November 13.
-- **Where:** your team folder, as a markdown file:
+- **Where:** your team folder, as a markdown file named after the date that it is due:
 
 ```
 teams/your-team-name/weekly_update_YYYY-MM-DD.md
 ```
-
-- **File name:** use the date the update is due. The first one is `weekly_update_2026-11-13.md`.
-- **Before you write it:** update your team's `demand_strategy.md`, so the Growth section can say what changed.
 
 ## 3. The template
 
