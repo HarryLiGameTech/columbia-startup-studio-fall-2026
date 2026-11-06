@@ -6,7 +6,7 @@
 
 A weekly update is a common practice that helps you to maintain a cadence of work, but also helps you to see what you have gotten done over time. It will help you to order your thoughts and direction you are going, and keep accountable to what you intend to do.
 
-If you go on to make a startup yourself, I highly recommend maintaining this practice.
+If you go on to make a start-up business yourself, I highly recommend maintaining this practice.
 
 ## 2. How to submit
 
@@ -19,53 +19,42 @@ teams/your-team-name/weekly_update_YYYY-MM-DD.md
 
 ## 3. The template
 
-Copy everything in the box into your file and fill it in.
+#### Accountability: what we did
 
-```markdown
-# Weekly Update: [Team name], [Date]
+- Build: What did you actually build? Why did your actions differ from the plan?
+- Grow: What did you do from your growth plan? Why did your actions differ from the plan?
+- Analyze: What analysis was completed? Why did your actions differ from the plan?
+- Research: What research was completed? Why did your actions differ from the plan?
 
-**Accountability: what we built last week and why**
+#### Planning: what we're doing
 
-- 
+- Build: What are we going to build this week? Why did we prioritize it?
+- Grow: What actions will grow our user base? Why do we think so?
+- Analyze: What analysis do we plan on doing? (analytics, user research synthesis, etc). Why is it important?
+- Research: What research will we do? (usability testing, competitive research, pricing studies, etc) Why is it important?
 
-**Planning: what we're building this week and why**
+#### Issues
 
-- 
+- What issues and blockers do you have?
 
-**Reporting: current user count**
-
-- Users total:
-- Change since last week:
-
-**Growth: what changed in our demand strategy**
-
-- (Update demand_strategy.md first, then say what changed.)
-
-**Issues: biggest blocker**
-
-- (Write "None" if there isn't one.)
-```
-
-## 4. Sample update (hypothetical)
-
-> **This is a made-up example.** "PantryPal" is not a real team, and these numbers are invented. Use it to see the length and level of detail.
+## 4. Sample update
 
 ### Weekly Update: PantryPal (example), November 13, 2026
 
-**Accountability: what we built last week and why**
-- Ran 4 usability sessions. 3 of 4 people couldn't find where to type ingredients. They scrolled past the box.
-- Moved the ingredient box to the top of the home page. That's the step right before the aha moment, so it mattered most.
+#### Accountability: what we did
 
-**Planning: what we're building this week and why**
-- Cut the sign-up step before the first recipe. People can now try it first and make an account after. Two testers stopped at the sign-up form.
-- Skipping the meal-planner feature for now. No tester asked for it.
+- Build: Moved the ingredient box to the top of the home page. That's the step right before the aha moment, so it mattered most. We planned to start the meal planner too, but the usability sessions changed our minds.
+- Grow: Posted in one campus cooking group and on Instagram, as our growth plan said. We're at 23 users, up from 14 last week. 9 of the new ones came from the cooking group post; Instagram brought none. We planned three Instagram posts and stopped after one when it brought nobody.
+- Analyze: Checked Google Analytics by UTM source. That's how we know the cooking group post worked and Instagram didn't.
+- Research: Ran 4 usability sessions. Users couldn't find where to type ingredients; they scrolled past the box. That's why the box moved before anything else.
 
-**Reporting: current user count**
-- 23 users total. Up from 14 last week.
-- 9 of the new users came from one post in a campus cooking group.
+#### Planning: what we're doing
 
-**Growth: what changed in our demand strategy**
-- Campus cooking group posts work; Instagram didn't bring anyone. Moved Instagram time to two more campus groups.
+- Build: Cut the sign-up step before the first recipe, so people can try it first and make an account after. Two testers stopped at the sign-up form, and it's the last thing between a visitor and the aha moment. Skipping the meal planner for now: no tester asked for it.
+- Grow: Move our time from posting on Instagram to two more campus groups. The one group we tried brought 9 users in a week; Instagram brought none.
+- Analyze: Set up a funnel from visit to first recipe. It tells us whether cutting the sign-up step actually lets more people reach a recipe.
+- Research: Run 3 more usability sessions with strangers after the sign-up change. Why is it important? We need to see whether people now reach the first recipe without help.
 
-**Issues: biggest blocker**
-- Our recipe API limits us to 100 calls a day. We need to cache results or switch providers.
+#### Issues
+
+- Our recipe API limits us to 100 calls a day. We need to cache results or switch providers before the campus posts bring more traffic.
