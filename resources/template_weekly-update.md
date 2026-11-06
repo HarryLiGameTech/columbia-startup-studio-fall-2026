@@ -26,7 +26,7 @@ teams/your-team-name/weekly_update_YYYY-MM-DD.md
 - Analyze: What analysis was completed? Why did your actions differ from the plan?
 - Research: What research was completed? Why did your actions differ from the plan?
 
-#### Planning: what we're doing
+#### Planning: what we're doing next
 
 - Build: What are we going to build this week? Why did we prioritize it?
 - Grow: What actions will grow our user base? Why do we think so?
@@ -48,7 +48,7 @@ teams/your-team-name/weekly_update_YYYY-MM-DD.md
 - Analyze: Checked Google Analytics by UTM source. That's how we know the cooking group post worked and Instagram didn't.
 - Research: Ran 4 usability sessions. Users couldn't find where to type ingredients; they scrolled past the box. That's why the box moved before anything else.
 
-#### Planning: what we're doing
+#### Planning: what we're doing next
 
 - Build: Cut the sign-up step before the first recipe, so people can try it first and make an account after. Two testers stopped at the sign-up form, and it's the last thing between a visitor and the aha moment. Skipping the meal planner for now: no tester asked for it.
 - Grow: Move our time from posting on Instagram to two more campus groups. The one group we tried brought 9 users in a week; Instagram brought none.
