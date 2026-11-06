@@ -34,6 +34,9 @@ The "why" matters most. Anyone can list tasks. The update should show that you'r
 - 23 users total. Up from 14 last week.
 - 9 of the new users came from one post in a campus cooking group.
 
+**Growth: what changed in our demand strategy**
+- Campus cooking group posts work; Instagram didn't bring anyone. Moved Instagram time to two more campus groups.
+
 **Issues: biggest blocker**
 - Our recipe API limits us to 100 calls a day. We need to cache results or switch providers.
 
@@ -54,6 +57,9 @@ Copy everything below into your file and fill it in.
 **Reporting: current user count**
 - Users total:
 - Change since last week:
+
+**Growth: what changed in our demand strategy**
+- (Update `demand_strategy.md` first, then say what changed.)
 
 **Issues: biggest blocker**
 - (Write "None" if there isn't one.)
