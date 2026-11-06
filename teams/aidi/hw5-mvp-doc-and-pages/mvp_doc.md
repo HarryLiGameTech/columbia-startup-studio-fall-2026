@@ -41,7 +41,7 @@ The following work is ordered by the value and dependencies it adds after the cu
 4. **My College List and application planning:** Let students keep one working list and view each college's application rounds, required tasks, and deadlines so research can turn into action.
 5. **Accounts and secure persistence:** Add authentication only when cross-visit continuity provides enough value to justify the added security, privacy, and support burden.
 6. **Application-material workspace:** Allow students to organize research notes, drafts, and other preparation materials after accounts, authorization, retention, deletion, and document-security rules have been designed.
-7. **Production deployment and product analytics:** Deploy the product for broader use and instrument only the minimum consented events needed to understand activation, retention, and failure points.
+7. **Full MVP production deployment and product analytics:** Move the complete product beyond the current marketing-only deployment and instrument only the minimum consented events needed to understand activation, retention, and failure points.
 8. **Homepage and landing-page reintegration:** Update the demand pages after product testing establishes which value proposition and workflow deserve to lead the public website.
 
 ## 4. What Is Cut and What Is Faked
@@ -66,18 +66,16 @@ Costs below describe the project's current incremental cost, not promotional lis
 | --- | --- | --- |
 | React 19, TypeScript, React Router 8, and Vite | Bilingual frontend, routing, interface state, and builds | $0; open-source software |
 | Python 3.14, Django 5.2 LTS, and Django REST Framework | Versioned REST API, school data, publication rules, browsing, and filtering | $0; open-source software |
-| PostgreSQL 18 and psycopg 3 | Relational school database | $0 in local development |
+| PostgreSQL 18 and psycopg 3 | Relational school database locally and the deployed marketing waitlist database on Render Singapore | $0 currently through local development and Render's free technical-validation instance; a paid database and backups are required before durable user-data collection |
 | OpenAPI with drf-spectacular | API contract and schema | $0; open-source software |
 | pytest, Vitest, Testing Library, and Playwright | Backend, component, and end-to-end verification | $0; open-source software |
 | OpenAI Codex | Coding agent used during development; it is not part of the product runtime | No separate project charge; used through existing team access |
 | GitHub | Source control and team collaboration | $0 incremental project cost on the current plan |
-| Railway | Approved target for the Django API and PostgreSQL production services; not yet provisioned | $0 currently; production cost to be confirmed before deployment |
-| Frontend production hosting | Not yet selected or provisioned | $0 currently; provider and cost remain open |
-| Cloudflare Worker and D1 | Existing marketing-site waitlist only; separate from the MVP product database | No incremental MVP product cost recorded |
+| Render Singapore | Hosts the public React marketing pages, Django waitlist API, and PostgreSQL waitlist database; the complete MVP product routes remain private | $0 for the current free course-demonstration instances; paid services, database backups, and recovery verification are required before broader public acquisition |
 | Official public data sources | CDS files, official college pages, NCES/IPEDS, federal Clery data, and verified ranking information | $0 access cost; manual research time is the material cost |
 | Sign-in, transactional email, payments, product analytics, and runtime AI | Not used in the current MVP | $0 |
 
-The codebase is a monorepo organized as a modular monolith with vertical feature slices. The frontend calls versioned `/api/v1/` REST endpoints; Django owns school facts and filter rules so business logic is not duplicated in the browser. Railway remains the approved backend and database target, while frontend hosting and production analytics remain open decisions.
+The codebase is a monorepo organized as a modular monolith with vertical feature slices. The frontend calls versioned `/api/v1/` REST endpoints; Django owns school facts and filter rules so business logic is not duplicated in the browser. Render Singapore currently hosts only the public marketing pages, Django waitlist endpoint, and waitlist database. The complete MVP product, product analytics, paid operating plan, and backup and recovery procedures remain outside the current public deployment.
 
 ## 6. How We Will Know It Works
 
@@ -97,7 +95,7 @@ This threshold tests the MVP's actual promise: not simply whether a page loads, 
 - **Trust and usefulness:** Interview evidence supports the problem, but we still need to observe whether students use source links and consider the filtered list a better starting point than their existing process.
 - **Recommendation validity:** Historical score distributions can support future categories, but the team has not yet validated decision-tree thresholds or how to communicate uncertainty responsibly.
 - **Privacy and security:** Accounts and document storage would create materially higher obligations for authentication, access control, retention, deletion, and incident response.
-- **Production choices:** Frontend hosting, product analytics, operating cost, and backup and recovery procedures must be resolved before public deployment.
+- **Full-product production choices:** The marketing pages are deployed, but paid operating cost, durable database backups, recovery procedures, product analytics, and the complete MVP release plan must be resolved before broader public acquisition or full-product deployment.
 
 ## 8. Roles
 
