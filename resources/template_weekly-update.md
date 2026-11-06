@@ -6,6 +6,8 @@
 
 A weekly update is a common practice that helps you to maintain a cadence of work, but also helps you to see what you have gotten done over time. It will help you to order your thoughts and direction you are going, and keep accountable to what you intend to do.
 
+If you go on to make a startup yourself, I highly recommend maintaining this practice.
+
 ## 2. How to submit
 
 - **When:** before class every Friday. The first one is due Friday, November 13.
