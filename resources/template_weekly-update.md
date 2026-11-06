@@ -19,25 +19,32 @@ teams/your-team-name/weekly_update_YYYY-MM-DD.md
 
 ## 3. The template
 
-Copy everything below into your file and fill it in.
+Copy everything in the box into your file and fill it in.
 
-### Weekly Update: [Team name], [Date]
+```markdown
+# Weekly Update: [Team name], [Date]
 
 **Accountability: what we built last week and why**
--
+
+- 
 
 **Planning: what we're building this week and why**
--
+
+- 
 
 **Reporting: current user count**
+
 - Users total:
 - Change since last week:
 
 **Growth: what changed in our demand strategy**
-- (Update `demand_strategy.md` first, then say what changed.)
+
+- (Update demand_strategy.md first, then say what changed.)
 
 **Issues: biggest blocker**
+
 - (Write "None" if there isn't one.)
+```
 
 ## 4. Sample update (hypothetical)
 
