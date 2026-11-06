@@ -1,22 +1,50 @@
+<!-- read-when: Writing, changing, or answering questions about the weekly team update. -->
+
 # Weekly Update Template
 
-Every team submits a short update each week. It's due before class on Friday. The first one is due Friday, November 13.
+## 1. What it is and why
 
-**Where it goes:** your team folder, as a markdown file.
+Every week, each team writes a short update: what you built, what you're building next, how many users you have, what changed in your demand strategy, and what's blocking you.
+
+The "why" matters most. Anyone can list tasks. The update should show that you're making choices about what to build and what to skip.
+
+**How long:** half a page. Not a novel.
+
+## 2. How to submit
+
+- **When:** before class every Friday. The first one is due Friday, November 13.
+- **Where:** your team folder, as a markdown file:
 
 ```
 teams/your-team-name/weekly_update_YYYY-MM-DD.md
 ```
 
-Use the date the update is due. The first one is `weekly_update_2026-11-13.md`.
+- **File name:** use the date the update is due. The first one is `weekly_update_2026-11-13.md`.
+- **Before you write it:** update your team's `demand_strategy.md`, so the Growth section can say what changed.
 
-**How long:** Half a page. Not a novel.
+## 3. The template
 
-The "why" matters most. Anyone can list tasks. The update should show that you're making choices about what to build and what to skip.
+Copy everything below into your file and fill it in.
 
----
+### Weekly Update: [Team name], [Date]
 
-## Part 1: Sample update (hypothetical)
+**Accountability: what we built last week and why**
+-
+
+**Planning: what we're building this week and why**
+-
+
+**Reporting: current user count**
+- Users total:
+- Change since last week:
+
+**Growth: what changed in our demand strategy**
+- (Update `demand_strategy.md` first, then say what changed.)
+
+**Issues: biggest blocker**
+- (Write "None" if there isn't one.)
+
+## 4. Sample update (hypothetical)
 
 > **This is a made-up example.** "PantryPal" is not a real team, and these numbers are invented. Use it to see the length and level of detail.
 
@@ -39,27 +67,3 @@ The "why" matters most. Anyone can list tasks. The update should show that you'r
 
 **Issues: biggest blocker**
 - Our recipe API limits us to 100 calls a day. We need to cache results or switch providers.
-
----
-
-## Part 2: Blank template
-
-Copy everything below into your file and fill it in.
-
-### Weekly Update: [Team name], [Date]
-
-**Accountability: what we built last week and why**
--
-
-**Planning: what we're building this week and why**
--
-
-**Reporting: current user count**
-- Users total:
-- Change since last week:
-
-**Growth: what changed in our demand strategy**
-- (Update `demand_strategy.md` first, then say what changed.)
-
-**Issues: biggest blocker**
-- (Write "None" if there isn't one.)
