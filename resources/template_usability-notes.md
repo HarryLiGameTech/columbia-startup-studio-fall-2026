@@ -1,6 +1,6 @@
 # Usability Testing Notes Template
 
-Use this for Homework 9. Run 3 to 5 sessions with real people in your target audience.
+Use this for Homework 7. Run 3 to 5 sessions with real people in your target audience.
 
 ## Reminders
 

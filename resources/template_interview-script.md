@@ -1,6 +1,6 @@
 # Usability Test Script Template
 
-Use this script for every usability session in Homework 9.
+Use this script for every usability session in Homework 7.
 
 **Three rules for the person running the session:**
 
