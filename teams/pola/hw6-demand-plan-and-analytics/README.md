@@ -18,6 +18,10 @@ See [demand_strategy.md](demand_strategy.md). It covers traffic owners by week, 
   - [Thank-you page](https://astrapath-indoornav.netlify.app/thanks/)
 - **Signup event:** after someone joins the waitlist, they land on the thank-you page. It fires a `sign_up` event, with `signup_page` set to the page they signed up on. `sign_up` is marked as a key event in Google Analytics.
 - **UTMs:** every link we post uses lowercase UTMs. The convention is in [demand_strategy.md](demand_strategy.md#social-posting-schedule). Each waitlist signup also saves its UTMs in Netlify Forms, so we can count signups by post even where Google Analytics doesn't load.
-- **Realtime check:** [ga-realtime.png](ga-realtime.png), taken after the tag went live.
+- **Realtime check:** two screenshots, taken after the tag went live:
+  - [ga-realtime.png](ga-realtime.png): active users and page views
+  - [ga-realtime-sign-up.png](ga-realtime-sign-up.png): `page_view` and `sign_up` in the event count, and `sign_up` counted as a key event
 
 ![Google Analytics Realtime overview for AstraPath](ga-realtime.png)
+
+![Google Analytics Realtime event counts, with sign_up counted as a key event](ga-realtime-sign-up.png)
